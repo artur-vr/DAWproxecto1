@@ -2,79 +2,95 @@
 
 <html>
     <head>
-        <meta charset="utf-8"/>
         <title>Subreal Engine</title>
+        <meta name="authors" content="Alexandre Lorenzo Martínez, Artur Vázquez Rego"/>
+        <meta name="description" content="Subreal Engine é un motor de xogo."/>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../assets/css/main.css">
     </head>
-    <body style="background-color:black; color:white">
-        <nav>
-            <figure><a href="../index.html"><img src="../assets/images/Logo_Subreal_Blanco.png" alt="Logo Subreal Engine" height="30"/></a></figure>
-            <ul>
-                <li><a href="descarga.html">Descarga</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
-                <li><a href="novidades.html">Novidades</a></li>
-                <li><a href="xogos.html">Xogos</a></li>
-                <li><a href="soporte.html">Soporte</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/subrealengine_es">
-                    <img src="../assets/images/icons/Instagram.svg" alt="Instagram" height="20">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/subrealengine">
-                    <img src="../assets/images/icons/YouTube.svg" alt="YouTube" height="20">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://x.com/subrealengine">
-                    <img src="../assets/images/icons/X.svg" alt="X (twitter)" height="20">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <body>
+        <header>
+            <nav>
+                <figure><a href="../index.html"><img src="../assets/images/Logo_Subreal_Blanco.png" alt="Logo Subreal Engine" height="40"/></a></figure>
+                <ul>
+                    <li><a href="descarga.html">Descarga</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="novidades.html">Novidades</a></li>
+                    <li><a href="xogos.html">Xogos</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                </ul>
+            </nav>
 
-        <section>
-            <h2>Roadmap</h2>
-            <h3>Próximos pasos</h3>
-            <ul>
-                <li>Implementación de soporte para motores de física avanzados</li>
-                <li>Compatibilidade con sistemas operativos Linux e macOS</li>
-                <li>Actualización da documentación técnica e tutoriais</li>
-            </ul>
-            <a href="../assets/docs/Roadmap.pdf">Descargar Documento</a>
-        </section>
+            <form class="barra-busca" action="recursos.html" method="get">
+                <label for="busca" class="sr-only">Buscar</label>
+                <input type="search" id="busca" name="q" placeholder="Buscar...">
+                <input type="submit">
+            </form>
+            
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/subrealengine_es">
+                        <img src="../assets/images/icons/Instagram.svg" alt="Instagram" height="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/subrealengine">
+                        <img src="../assets/images/icons/YouTube.svg" alt="YouTube" height="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/subrealengine">
+                        <img src="../assets/images/icons/X.svg" alt="X (twitter)" height="40">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <section>     
-            <h2>Novidades destacadas</h2>
-            <article id="subreal-awards">
-                <figure> <img src="../assets/images/photos/Principal_Novidades_01.jpg" alt="Subreal Awards 2025" height="120"/> </figure>
-                <time datetime="2025-12-27">27 de decembro de 2025</time>
-                <h3><a href="novidades/subreal-awards-2025.html">Xa están aquí os Subreal Awards 2025!</a></h3>
-                <p>Descobre cales foron os xogos premiados deste ano e que proxectos marcaron tendencia na comunidade.</p>
-            </article>
+        <main>
+            <section>
+                <h2>Roadmap</h2>
+                <h3>Próximos pasos</h3>
+                <ul>
+                    <li>Implementación de soporte para motores de física avanzados</li>
+                    <li>Compatibilidade con sistemas operativos Linux e macOS</li>
+                    <li>Actualización da documentación técnica e tutoriais</li>
+                </ul>
+                <a href="../assets/docs/Roadmap.pdf">Descargar Documento</a>
+            </section>
+            
+            <section>     
+                <h2>Novidades destacadas</h2>
+                <article id="subreal-awards">
+                    <figure> <img src="../assets/images/photos/Principal_Novidades_01.jpg" alt="Subreal Awards 2025" height="120"/> </figure>
+                    <time datetime="2025-12-27">27 de decembro de 2025</time>
+                    <h3><a href="novidades/subreal-awards-2025.html">Xa están aquí os Subreal Awards 2025!</a></h3>
+                    <p>Descobre cales foron os xogos premiados deste ano e que proxectos marcaron tendencia na comunidade.</p>
+                </article>
 
-            <article id="actualizacion-roadmap">
-                <figure> <img src="../assets/images/photos/Principal_Novidades_02.jpg" alt="Actualización Roadmap" height="120"/> </figure>
-                <time datetime="2026-01-14">14 de xaneiro de 2026</time>
-                <h3><a href="novidades/actualizacion-roadmap.html">Actualización do Roadmap</a></h3>
-                <p>Publicamos os próximos obxectivos de desenvolvemento do motor, con melloras en rendemento e ferramentas.</p>
-            </article>
+                <article id="actualizacion-roadmap">
+                    <figure> <img src="../assets/images/photos/Principal_Novidades_02.jpg" alt="Actualización Roadmap" height="120"/> </figure>
+                    <time datetime="2026-01-14">14 de xaneiro de 2026</time>
+                    <h3><a href="novidades/actualizacion-roadmap.html">Actualización do Roadmap</a></h3>
+                    <p>Publicamos os próximos obxectivos de desenvolvemento do motor, con melloras en rendemento e ferramentas.</p>
+                </article>
 
-            <article id="exito-farlands">
-                <figure> <img src="../assets/images/photos/Principal_Novidades_03.jpg" alt="Éxito de Farlands" height="120"/> </figure>
-                <time datetime="2026-02-03">3 de febreiro de 2026</time>
-                <h3><a href="novidades/exito-farlands.html">O gran éxito de Farlands</a></h3>
-                <p>Farlands convértese nun caso de éxito da escena indie grazas ao traballo do estudo e ás capacidades de Subreal Engine.</p>
-            </article>
+                <article id="exito-farlands">
+                    <figure> <img src="../assets/images/photos/Principal_Novidades_03.jpg" alt="Éxito de Farlands" height="120"/> </figure>
+                    <time datetime="2026-02-03">3 de febreiro de 2026</time>
+                    <h3><a href="novidades/exito-farlands.html">O gran éxito de Farlands</a></h3>
+                    <p>Farlands convértese nun caso de éxito da escena indie grazas ao traballo do estudo e ás capacidades de Subreal Engine.</p>
+                </article>
 
-            <article id="subreal-gamescom">
-                <figure> <img src="../assets/images/photos/Principal_Novidades_04.jpg" alt="Subreal en Gamescom" height="120"/> </figure>
-                <time datetime="2026-02-08">8 de febreiro de 2026</time>
-                <h3><a href="xogos/evento-gamescom.html">Subreal estará en Gamescom</a></h3>
-                <p>Anunciamos a participación de Subreal na próxima Gamescom con demos, charlas técnicas e actividades da comunidade.</p>
-            </article>
-        </section>
+                <article id="subreal-gamescom">
+                    <figure> <img src="../assets/images/photos/Principal_Novidades_04.jpg" alt="Subreal en Gamescom" height="120"/> </figure>
+                    <time datetime="2026-02-08">8 de febreiro de 2026</time>
+                    <h3><a href="xogos/evento-gamescom.html">Subreal estará en Gamescom</a></h3>
+                    <p>Anunciamos a participación de Subreal na próxima Gamescom con demos, charlas técnicas e actividades da comunidade.</p>
+                </article>
+            </section>
+        </main>
 
         <footer>
             <figure> <img src="../assets/images/Logo_Subreal_Verde.png" alt="Logo Subreal Engine" height="20"/> </figure>

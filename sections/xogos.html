@@ -1,151 +1,167 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
     <head>
-        <meta charset="utf-8"/>
         <title>Subreal Engine</title>
+        <meta name="authors" content="Alexandre Lorenzo Martínez, Artur Vázquez Rego"/>
+        <meta name="description" content="Subreal Engine é un motor de xogo."/>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../assets/css/main.css">
     </head>
-    <body style="background-color:black; color:white">
-        <nav>
-            <figure><a href="../index.html"><img src="../assets/images/Logo_Subreal_Blanco.png" alt="Logo Subreal Engine" height="30"/></a></figure>
-            <ul>
-                <li><a href="descarga.html">Descarga</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
-                <li><a href="novidades.html">Novidades</a></li>
-                <li><a href="xogos.html">Xogos</a></li>
-                <li><a href="soporte.html">Soporte</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/subrealengine_es">
-                    <img src="../assets/images/icons/Instagram.svg" alt="Instagram" height="20">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/subrealengine">
-                    <img src="../assets/images/icons/YouTube.svg" alt="YouTube" height="20">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://x.com/subrealengine">
-                    <img src="../assets/images/icons/X.svg" alt="X (twitter)" height="20">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <body>
+        <header>
+            <nav>
+                <figure><a href="../index.html"><img src="../assets/images/Logo_Subreal_Blanco.png" alt="Logo Subreal Engine" height="40"/></a></figure>
+                <ul>
+                    <li><a href="descarga.html">Descarga</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="novidades.html">Novidades</a></li>
+                    <li><a href="xogos.html">Xogos</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                </ul>
+            </nav>
 
-        <section>
-            <h2>Premios</h2>
-            <ul>
-                <li>
-                    <figure> <img src="../assets/images/photos/premio-farlands.webp" alt="Farlands" height="120"/> </figure>
-                    <h3><a href="xogos/premio-game-awards.html">The Game Awards 2025 - Mellor Dirección Artística</a></h3>
-                    <p>Farlands destaca pola súa dirección artística inmersiva nun mundo aberto cheo de tecnoloxía antiga e con teleportación.</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/premio-echoes-of-time.jpg" alt="Echoes of Time" height="120"/> </figure>
-                    <h3><a href="xogos/premio-bafta.html">BAFTA Games Awards 2025 - Mellor Deseño de Xogo</a></h3>
-                    <p>Echoes of Time ofrece un deseño innovador con mecánicas únicas que transforman a experiencia de xogo...</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/premio-chromatic.jpg" alt="Chromatic" height="120"/> </figure>
-                    <h3><a href="xogos/premio-golden-joystick.html">Golden Joystick Awards 2025 - Mellor Xogo Indie</a></h3>
-                    <p>Chromatic é un xogo de plataformas artístico que destaca pola súa estética visual e mecánicas creativas...</p>
-                </li>
-            </ul>
-        </section>
+            <form class="barra-busca" action="recursos.html" method="get">
+                <label for="busca" class="sr-only">Buscar</label>
+                <input type="search" id="busca" name="q" placeholder="Buscar...">
+                <input type="submit">
+            </form>
+            
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/subrealengine_es">
+                        <img src="../assets/images/icons/Instagram.svg" alt="Instagram" height="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/subrealengine">
+                        <img src="../assets/images/icons/YouTube.svg" alt="YouTube" height="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/subrealengine">
+                        <img src="../assets/images/icons/X.svg" alt="X (twitter)" height="40">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <section>
-            <h2>Catálogo de xogos</h2>
-            <ul>
-                <li>
-                    <figure> <img src="../assets/images/photos/Principal_Xogos_01.png" alt="Blasphemous 2" height="100"/> </figure>
-                    <h3><a href="xogos/xogo-blasphemous2.html">Blasphemous 2</a></h3>
-                    <p>The Game Kitchen</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/xogo-void-runner.jpg" alt="Void Runner" height="100"/> </figure>
-                    <h3><a href="xogos/xogo-void-runner.html">Void Runner</a></h3>
-                    <p>Stellar Games</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/Principal_Xogos_02.jpg" alt="Subnautica" height="100"/> </figure>
-                    <h3><a href="xogos/xogo-subnautica.html">Subnautica</a></h3>
-                    <p>Unknown Worlds Entertainment</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/Principal_Xogos_03.jpg" alt="Town to City" height="100"/> </figure>
-                    <h3><a href="xogos/xogo-town-to-city.html">Town to City</a></h3>
-                    <p>Galaxy Grove</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/xogo-crystal-maze.jpg" alt="Crystal Maze" height="100"/> </figure>
-                    <h3><a href="xogos/xogo-crystal-maze.html">Crystal Maze</a></h3>
-                    <p>Prismatic Dev</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/xogo-drift-legends.jpg" alt="Drift Legends" height="100"/> </figure>
-                    <h3><a href="xogos/xogo-drift-legends.html">Drift Legends</a></h3>
-                    <p>Velocity Studios</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/xogo-mystic-tower.png" alt="Mystic Tower" height="100"/> </figure>
-                    <h3><a href="xogos/xogo-mystic-tower.html">Mystic Tower</a></h3>
-                    <p>Arcane Labs</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/Principal_Xogos_04.png" alt="2XKO" height="100"/> </figure>
-                    <h3><a href="xogos/xogo-2xko.html">2XKO</a></h3>
-                    <p>Riot Games</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/Principal_Xogos_05.jpg" alt="Mewgenics" height="100"/> </figure>
-                    <h3><a href="xogos/xogo-mewgenics.html">Mewgenics</a></h3>
-                    <p>Edmund McMillen</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/Principal_Xogos_06.jpg" alt="Jurassic World Evolution" height="100"/> </figure>
-                    <h3><a href="xogos/xogo-jurassic-world-evolution.html">Jurassic World Evolution</a></h3>
-                    <p>Frontier Developments</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/Principal_Xogos_07.jpg" alt="Kena Bridge of Spirits" height="100"/> </figure>
-                    <h3><a href="xogos/xogo-kena.html">Kena Bridge of Spirits</a></h3>
-                    <p>Galaxy Grove</p>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/Principal_Xogos_08.jpg" alt="Jedi Fallen Order" height="100"/> </figure>
-                    <h3><a href="xogos/xogo-jedi-fallen-order.html">Jedi Fallen Order</a></h3>
-                    <p>Respawn Entertainment</p>
-                </li>
-            </ul>
-        </section>
+        <main>
+            <section>
+                <h2>Premios</h2>
+                <ul>
+                    <li>
+                        <figure> <img src="../assets/images/photos/premio-farlands.webp" alt="Farlands" height="120"/> </figure>
+                        <h3><a href="xogos/premio-game-awards.html">The Game Awards 2025 - Mellor Dirección Artística</a></h3>
+                        <p>Farlands destaca pola súa dirección artística inmersiva nun mundo aberto cheo de tecnoloxía antiga e con teleportación.</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/premio-echoes-of-time.jpg" alt="Echoes of Time" height="120"/> </figure>
+                        <h3><a href="xogos/premio-bafta.html">BAFTA Games Awards 2025 - Mellor Deseño de Xogo</a></h3>
+                        <p>Echoes of Time ofrece un deseño innovador con mecánicas únicas que transforman a experiencia de xogo...</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/premio-chromatic.jpg" alt="Chromatic" height="120"/> </figure>
+                        <h3><a href="xogos/premio-golden-joystick.html">Golden Joystick Awards 2025 - Mellor Xogo Indie</a></h3>
+                        <p>Chromatic é un xogo de plataformas artístico que destaca pola súa estética visual e mecánicas creativas...</p>
+                    </li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Eventos e Competicións</h2>
-            <ul>
-                <li>
-                    <figure> <img src="../assets/images/photos/evento-game-jam-2026.jpg" alt="Game Jam 2026" height="120"/> </figure>
-                    <time datetime="2026-03-15">15 de marzo de 2026</time>
-                    <h3><a href="xogos/evento-game-jam-2026.html">Game Jam 2026</a></h3>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/evento-campeonato-online.png" alt="Campeonato Online" height="120"/> </figure>
-                    <time datetime="2026-04-01">1 de abril de 2026</time>
-                    <h3><a href="xogos/evento-campeonato-online.html">Campeonato Online</a></h3>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/evento-devs-meetup.png" alt="Devs Meetup" height="120"/> </figure>
-                    <time datetime="2026-06-12">12 de xuño de 2026</time>
-                    <h3><a href="xogos/evento-devs-meetup.html">Devs Meetup</a></h3>
-                </li>
-                <li>
-                    <figure> <img src="../assets/images/photos/Principal_Novidades_04.jpg" alt="Gamescom 2026" height="120"/> </figure>
-                    <time datetime="2026-02-08">8 de febreiro de 2026</time>
-                    <h3><a href="xogos/evento-gamescom.html">Subreal en Gamescom</a></h3>
-                </li>
-            </ul>
-        </section>
+            <section>
+                <h2>Catálogo de xogos</h2>
+                <ul>
+                    <li>
+                        <figure> <img src="../assets/images/photos/Principal_Xogos_01.png" alt="Blasphemous 2" height="100"/> </figure>
+                        <h3><a href="xogos/xogo-blasphemous2.html">Blasphemous 2</a></h3>
+                        <p>The Game Kitchen</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/xogo-void-runner.jpg" alt="Void Runner" height="100"/> </figure>
+                        <h3><a href="xogos/xogo-void-runner.html">Void Runner</a></h3>
+                        <p>Stellar Games</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/Principal_Xogos_02.jpg" alt="Subnautica" height="100"/> </figure>
+                        <h3><a href="xogos/xogo-subnautica.html">Subnautica</a></h3>
+                        <p>Unknown Worlds Entertainment</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/Principal_Xogos_03.jpg" alt="Town to City" height="100"/> </figure>
+                        <h3><a href="xogos/xogo-town-to-city.html">Town to City</a></h3>
+                        <p>Galaxy Grove</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/xogo-crystal-maze.jpg" alt="Crystal Maze" height="100"/> </figure>
+                        <h3><a href="xogos/xogo-crystal-maze.html">Crystal Maze</a></h3>
+                        <p>Prismatic Dev</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/xogo-drift-legends.jpg" alt="Drift Legends" height="100"/> </figure>
+                        <h3><a href="xogos/xogo-drift-legends.html">Drift Legends</a></h3>
+                        <p>Velocity Studios</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/xogo-mystic-tower.png" alt="Mystic Tower" height="100"/> </figure>
+                        <h3><a href="xogos/xogo-mystic-tower.html">Mystic Tower</a></h3>
+                        <p>Arcane Labs</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/Principal_Xogos_04.png" alt="2XKO" height="100"/> </figure>
+                        <h3><a href="xogos/xogo-2xko.html">2XKO</a></h3>
+                        <p>Riot Games</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/Principal_Xogos_05.jpg" alt="Mewgenics" height="100"/> </figure>
+                        <h3><a href="xogos/xogo-mewgenics.html">Mewgenics</a></h3>
+                        <p>Edmund McMillen</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/Principal_Xogos_06.jpg" alt="Jurassic World Evolution" height="100"/> </figure>
+                        <h3><a href="xogos/xogo-jurassic-world-evolution.html">Jurassic World Evolution</a></h3>
+                        <p>Frontier Developments</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/Principal_Xogos_07.jpg" alt="Kena Bridge of Spirits" height="100"/> </figure>
+                        <h3><a href="xogos/xogo-kena.html">Kena Bridge of Spirits</a></h3>
+                        <p>Galaxy Grove</p>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/Principal_Xogos_08.jpg" alt="Jedi Fallen Order" height="100"/> </figure>
+                        <h3><a href="xogos/xogo-jedi-fallen-order.html">Jedi Fallen Order</a></h3>
+                        <p>Respawn Entertainment</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Eventos e Competicións</h2>
+                <ul>
+                    <li>
+                        <figure> <img src="../assets/images/photos/evento-game-jam-2026.jpg" alt="Game Jam 2026" height="120"/> </figure>
+                        <time datetime="2026-03-15">15 de marzo de 2026</time>
+                        <h3><a href="xogos/evento-game-jam-2026.html">Game Jam 2026</a></h3>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/evento-campeonato-online.png" alt="Campeonato Online" height="120"/> </figure>
+                        <time datetime="2026-04-01">1 de abril de 2026</time>
+                        <h3><a href="xogos/evento-campeonato-online.html">Campeonato Online</a></h3>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/evento-devs-meetup.png" alt="Devs Meetup" height="120"/> </figure>
+                        <time datetime="2026-06-12">12 de xuño de 2026</time>
+                        <h3><a href="xogos/evento-devs-meetup.html">Devs Meetup</a></h3>
+                    </li>
+                    <li>
+                        <figure> <img src="../assets/images/photos/Principal_Novidades_04.jpg" alt="Gamescom 2026" height="120"/> </figure>
+                        <time datetime="2026-02-08">8 de febreiro de 2026</time>
+                        <h3><a href="xogos/evento-gamescom.html">Subreal en Gamescom</a></h3>
+                    </li>
+                </ul>
+            </section>
+        </main>
 
         <footer>
             <figure> <img src="../assets/images/Logo_Subreal_Verde.png" alt="Logo Subreal Engine" height="20"/> </figure>

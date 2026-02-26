@@ -2,149 +2,165 @@
 
 <html>
     <head>
-        <meta charset="utf-8"/>
         <title>Subreal Engine</title>
+        <meta name="authors" content="Alexandre Lorenzo Martínez, Artur Vázquez Rego"/>
+        <meta name="description" content="Subreal Engine é un motor de xogo."/>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../assets/css/main.css">
     </head>
-    <body style="background-color:black; color:white">
-        <nav>
-            <figure> <img src="../assets/images/Logo_Subreal_Blanco.png" alt="Logo Subreal Engine" height="40"/> </figure>
-            <ul>
-                <li><a href="../sections/descarga.html">Descarga</a></li>
-                <li><a href="../sections/recursos.html">Recursos</a></li>
-                <li><a href="../sections/novidades.html">Novidades</a></li>
-                <li><a href="../sections/xogos.html">Xogos</a></li>
-                <li><a href="../sections/soporte.html">Soporte</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/">
-                    <img src="../assets/images/icons/Instagram.svg" alt="Instagram" height="40">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/">
-                    <img src="../assets/images/icons/YouTube.svg" alt="YouTube" height="40">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://x.com">
-                    <img src="../assets/images/icons/X.svg" alt="X (twitter)" height="40">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <body>
+        <header>
+            <nav>
+                <figure><a href="../index.html"><img src="../assets/images/Logo_Subreal_Blanco.png" alt="Logo Subreal Engine" height="40"/></a></figure>
+                <ul>
+                    <li><a href="descarga.html">Descarga</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="novidades.html">Novidades</a></li>
+                    <li><a href="xogos.html">Xogos</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                </ul>
+            </nav>
 
-        <section>
-            <h2 id="plug-ins">Plug Ins</h2>
-            <ul>
-                <li>
-                    <h3>NeuroPath AI</h3>
-                    <p>Sistema de navegación para enemigos (pathfinding) que aprende dos movementos
-                    do xogador para tenderlle emboscadas.</p>
-                    <h4><a href="../assets/docs/Plug_in.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>Vortex Particle Mobile</h3>
-                    <p>Xerador de efectos visuais (fume, lume, maxia...) optimizado para consumir menos recursos
-                    en dispositivos móbiles.
-                    </p>
-                    <h4><a href="../assets/docs/Plug_in.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>EchoLocation Audio</h3>
-                    <p>Plugin especializado en son 3D e reverberación dinámica segundo o material das paredes do nivel.</p>
-                    <h4><a href="../assets/docs/Plug_in.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>Chronos Physics</h3>
-                    <p>Facilita manipular o tempo en obxectos específicos sen afectar ao resto do mundo (ideal para
-                    xogos de crebacabezas ou fantasía).</p>
-                    <h4><a href="../assets/docs/Plug_in.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>LumenScribe UI</h3>
-                    <p>Kit de ferramentas para crear interfaces de usuario (HUD) que brillan e reaccionan
-                    aos eventos do xogo en tempo real.</p>
-                    <h4><a href="../assets/docs/Plug_in.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>Morphos Mesh</h3>
-                    <p>Ferramenta para crear deformacións orgánicas en modelos 3D (como monstros ou terreo maleable)
-                    directamente dende o editor.</p>
-                    <h4><a href="../assets/docs/Plug_in.zip">Descargar</a></h4>
-                </li>
-            </ul>
-        </section>
+            <form class="barra-busca" action="recursos.html" method="get">
+                <label for="busca" class="sr-only">Buscar</label>
+                <input type="search" id="busca" name="q" placeholder="Buscar...">
+                <input type="submit">
+            </form>
+            
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/subrealengine_es">
+                        <img src="../assets/images/icons/Instagram.svg" alt="Instagram" height="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/subrealengine">
+                        <img src="../assets/images/icons/YouTube.svg" alt="YouTube" height="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/subrealengine">
+                        <img src="../assets/images/icons/X.svg" alt="X (twitter)" height="40">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <section>
-            <h2 id="modelos-sprites">Modelos e Sprites</h2>
-            <ul>
-                <li>
-                    <h3>Árbores 3D Cozy</h3>
-                    <p>Set de árbores de diferentes tamaños, cores e estilos para xogos 3D de estética agradable
-                    e desenfadada.</p>
-                    <h4><a href="../assets/docs/Paquete_Modelos.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>Personaxes Low-Poly Fantasy</h3>
-                    <p>Colección de personaxes básicos (guerreiro, mago e exploradora) con animacións de
-                    camiñar e atacar xa incluídas.</p>
-                    <h4><a href="../assets/docs/Paquete_Modelos.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>Kit de Interiores Cyberpunk</h3>
-                    <p>Elementos de mobiliario futurista, luces de neon e terminais de datos para crear
-                    ambientes urbanos distópicos.</p>
-                    <h4><a href="../assets/docs/Paquete_Modelos.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>Poboado Medieval Pixelart Modular</h3>
-                    <p>Pezas de muros, teitos e fiestras para construír casas e castelos personalizados
-                    que encaixan perfectamente entre si.</p>
-                    <h4><a href="../assets/docs/Paquete_Sprites.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>Vehículos de Competición Retro 2D</h3>
-                    <p>Sprites de 8 vistas de coches clásicos de carreiras cun estilo visual inspirado nos xogos
-                    de arcade dos anos 90.</p>
-                    <h4><a href="../assets/docs/Paquete_Sprites.zip">Descargar</a></h4>
-                </li>
-            </ul>
-        </section>
+        <main>
+            <section>
+                <h2 id="plug-ins">Plug Ins</h2>
+                <ul>
+                    <li>
+                        <h3>NeuroPath AI</h3>
+                        <p>Sistema de navegación para enemigos (pathfinding) que aprende dos movementos
+                        do xogador para tenderlle emboscadas.</p>
+                        <h4><a href="../assets/docs/Plug_in.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>Vortex Particle Mobile</h3>
+                        <p>Xerador de efectos visuais (fume, lume, maxia...) optimizado para consumir menos recursos
+                        en dispositivos móbiles.
+                        </p>
+                        <h4><a href="../assets/docs/Plug_in.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>EchoLocation Audio</h3>
+                        <p>Plugin especializado en son 3D e reverberación dinámica segundo o material das paredes do nivel.</p>
+                        <h4><a href="../assets/docs/Plug_in.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>Chronos Physics</h3>
+                        <p>Facilita manipular o tempo en obxectos específicos sen afectar ao resto do mundo (ideal para
+                        xogos de crebacabezas ou fantasía).</p>
+                        <h4><a href="../assets/docs/Plug_in.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>LumenScribe UI</h3>
+                        <p>Kit de ferramentas para crear interfaces de usuario (HUD) que brillan e reaccionan
+                        aos eventos do xogo en tempo real.</p>
+                        <h4><a href="../assets/docs/Plug_in.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>Morphos Mesh</h3>
+                        <p>Ferramenta para crear deformacións orgánicas en modelos 3D (como monstros ou terreo maleable)
+                        directamente dende o editor.</p>
+                        <h4><a href="../assets/docs/Plug_in.zip">Descargar</a></h4>
+                    </li>
+                </ul>
+            </section>
 
-        <section>
-            <h2 id="paquetes-texturas">Paquetes de texturas</h2>
-            <ul>
-                <li>
-                    <h3>Animal Skin Package</h3>
-                    <p>Paquete de texturas de tipo realista para animais. Inclúe texturas para decenas de mamíferos, aves
-                    peixes e reptís.</p>
-                    <h4><a href="../assets/docs/Paquete_Texturas.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>Pezas de Metal Oxidado</h3>
-                    <p>Texturas de alta resolución de metais vellos, ferruxe e superficies industriais desgastadas
-                    polo tempo.</p>
-                    <h4><a href="../assets/docs/Paquete_Texturas.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>Biomas de Natureza Viva</h3>
-                    <p>Conxunto de texturas para terreos: herba fresca, terra húmida, area de praia e liques sobre
-                    rocha volcánica.</p>
-                    <h4><a href="../assets/docs/Paquete_Texturas.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>Arquitectura Urbana Gótica</h3>
-                    <p>Materiais detallados de pedra labrada, vidreiras antigas e tellados de pizarra para edificios de época.</p>
-                    <h4><a href="../assets/docs/Paquete_Texturas.zip">Descargar</a></h4>
-                </li>
-                <li>
-                    <h3>Superficies de Fluídos Máxicos</h3>
-                    <p>Texturas animadas e mapas de normais para representar lava, auga cristalina e fluxos de enerxía mística.</p>
-                    <h4><a href="../assets/docs/Paquete_Texturas.zip">Descargar</a></h4>
-                </li>
-            </ul>
-        </section>
+            <section>
+                <h2 id="modelos-sprites">Modelos e Sprites</h2>
+                <ul>
+                    <li>
+                        <h3>Árbores 3D Cozy</h3>
+                        <p>Set de árbores de diferentes tamaños, cores e estilos para xogos 3D de estética agradable
+                        e desenfadada.</p>
+                        <h4><a href="../assets/docs/Paquete_Modelos.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>Personaxes Low-Poly Fantasy</h3>
+                        <p>Colección de personaxes básicos (guerreiro, mago e exploradora) con animacións de
+                        camiñar e atacar xa incluídas.</p>
+                        <h4><a href="../assets/docs/Paquete_Modelos.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>Kit de Interiores Cyberpunk</h3>
+                        <p>Elementos de mobiliario futurista, luces de neon e terminais de datos para crear
+                        ambientes urbanos distópicos.</p>
+                        <h4><a href="../assets/docs/Paquete_Modelos.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>Poboado Medieval Pixelart Modular</h3>
+                        <p>Pezas de muros, teitos e fiestras para construír casas e castelos personalizados
+                        que encaixan perfectamente entre si.</p>
+                        <h4><a href="../assets/docs/Paquete_Sprites.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>Vehículos de Competición Retro 2D</h3>
+                        <p>Sprites de 8 vistas de coches clásicos de carreiras cun estilo visual inspirado nos xogos
+                        de arcade dos anos 90.</p>
+                        <h4><a href="../assets/docs/Paquete_Sprites.zip">Descargar</a></h4>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 id="paquetes-texturas">Paquetes de texturas</h2>
+                <ul>
+                    <li>
+                        <h3>Animal Skin Package</h3>
+                        <p>Paquete de texturas de tipo realista para animais. Inclúe texturas para decenas de mamíferos, aves
+                        peixes e reptís.</p>
+                        <h4><a href="../assets/docs/Paquete_Texturas.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>Pezas de Metal Oxidado</h3>
+                        <p>Texturas de alta resolución de metais vellos, ferruxe e superficies industriais desgastadas
+                        polo tempo.</p>
+                        <h4><a href="../assets/docs/Paquete_Texturas.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>Biomas de Natureza Viva</h3>
+                        <p>Conxunto de texturas para terreos: herba fresca, terra húmida, area de praia e liques sobre
+                        rocha volcánica.</p>
+                        <h4><a href="../assets/docs/Paquete_Texturas.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>Arquitectura Urbana Gótica</h3>
+                        <p>Materiais detallados de pedra labrada, vidreiras antigas e tellados de pizarra para edificios de época.</p>
+                        <h4><a href="../assets/docs/Paquete_Texturas.zip">Descargar</a></h4>
+                    </li>
+                    <li>
+                        <h3>Superficies de Fluídos Máxicos</h3>
+                        <p>Texturas animadas e mapas de normais para representar lava, auga cristalina e fluxos de enerxía mística.</p>
+                        <h4><a href="../assets/docs/Paquete_Texturas.zip">Descargar</a></h4>
+                    </li>
+                </ul>
+            </section>
+        </main>
 
         <footer>
             <figure> <img src="../assets/images/Logo_Subreal_Blanco.png" alt="Logo Subreal Engine" height="40"/> </figure>
