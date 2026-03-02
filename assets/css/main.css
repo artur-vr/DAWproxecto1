@@ -1,8 +1,65 @@
 body {
-	font-family: 'Istok Web', 'Noto Sans', 'Open Sans', sans-serif;
 	background-color: #000;
+	font-family: 'Istok Web', 'Noto Sans', 'Open Sans', sans-serif;
+	/*font-size: 1vw;*/
 	color: #fff;
 }
 
+html {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 3rem;
+	color: #8BE8CB;
+}
+
+
 
 /*Header*/
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-principal,
+.nav-social {
+	display: flex;
+}
+
+/*.logo img {
+	display: block;
+}*/
+
+.menu {
+	display: flex;
+	list-style: none;
+	gap: 2rem;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu a:hover {
+	color: #D9D9D9;
+}
+
+.barra-busca {
+	display: flex;
+	gap: .5rem;
+}
+
+
+.social {
+	display: flex;
+	list-style: none;
+	gap: 3rem;
+	margin-right: 3rem;
+}
+
+
+
+
