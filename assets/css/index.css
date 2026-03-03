@@ -1,0 +1,150 @@
+h2 {
+    color: #8BE8CB;
+    margin-bottom: 2rem;
+}
+
+p {
+    color: #ADADAD;
+}
+
+time {
+    color: #ADADAD;
+    font-size: .8rem;
+}
+
+/*
+* Sección Título
+*/
+
+.titulo {
+    background-image: url(../images/photos/titulo1.jpg); /*imaxe de fondo*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 6rem 5rem;
+
+    display: flex;
+    justify-content: left;
+}
+
+.contido-titulo { /*logo e texto do titulo, arrodeados por un recadro gris semitransparente*/
+    background-color: rgba(217, 217, 217, 0.75);
+
+    padding: 2rem 3rem;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.texto-titulo h1{
+    /* font-size: 3rem;
+	color: #8BE8CB; */
+    text-shadow: 0 2px 10px rgba(0,0,0,0.75); /*tamaño, cor e sombra do titulo*/
+}
+
+.texto-titulo h2 {
+    color: white;
+}
+
+.logo-titulo {
+    filter: drop-shadow(0 2px 10px rgba(0,0,0,0.75)); /*sombra do logo*/
+}
+
+
+
+/*
+* Sección Novidades
+*/
+
+.novidades {
+    padding: 4rem 3rem;
+}
+
+.novidades ul {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 1.5rem;
+}
+
+.nova {  /*novas en xeral*/
+    background: #272727;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.nova img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.nova-principal { /*nova principal, ocupa 2 filas*/
+    grid-row: span 2;
+}
+
+
+.mais-novas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mais-novas a {
+    background: #8BE8CB;
+    color: black;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+/*
+* Sección Caracteristicas
+*/
+
+.caracteristicas {
+    padding: 4rem 3rem;
+}
+
+.caracteristicas ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 2rem;
+}
+
+.caract {
+    background: #272727;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.caract img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+
+/*
+* Sección Xogos
+*/
+
+/*
+* Sección Descargas
+*/
+
+

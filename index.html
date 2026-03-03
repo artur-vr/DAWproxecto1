@@ -8,6 +8,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/index.css">
     </head>
 
     <body>
@@ -24,7 +25,7 @@
             </nav>
 
             <form class="barra-busca" action="sections/recursos.html" method="get">
-                <label for="busca" class="sr-only">Buscar</label>
+                <!-- <label for="busca" class="sr-only">Buscar</label> -->
                 <input type="search" id="busca" name="q" placeholder="Buscar...">
                 <input type="submit">
             </form>
@@ -51,59 +52,63 @@
         </header>
 
         <main>
-            <section>
-                <h1>Subreal Engine</h1>
-                <h2>Imaxina, crea e explota a túa creatividade</h2>
-                <figure> <img src="assets/images/Logo_Subreal_Verde.png" alt="Logo Subreal Engine" height="80"/> </figure>
+            <section class="titulo">
+                <div class="contido-titulo">
+                    <figure class="logo-titulo"> <img src="assets/images/Logo_Subreal_Verde.png" alt="Logo Subreal Engine" height="180rem"/> </figure>
+                    <div class="texto-titulo">
+                        <h1>Subreal Engine</h1>
+                        <h2>Imaxina, crea e explota a túa creatividade</h2>
+                    </div>
+                </div>
             </section>
 
-            <section>
+            <section class="novidades">
                 <h2>Últimas novidades</h2>
                 <ul>
-                    <li>
-                        <figure> <img src="assets/images/photos/Principal_Novidades_01.jpg" alt="Novidades1" height="40"/> </figure>
+                    <li class="nova nova-principal">
+                        <figure> <img src="assets/images/photos/Principal_Novidades_01.jpg" alt="Novidades1"/> </figure>
                         <time datetime="2025-12-27">27 de decembro de 2025</time>
                         <h3><a href="sections/novidades/subreal-awards-2025.html">Xa están aquí os Subreal Awards 2025!</a></h3>
                         <h4>Descobre cales foron os xogos premiados este ano</h4>
                     </li>
-                    <li>
-                        <figure> <img src="assets/images/photos/Principal_Novidades_02.jpg" alt="Novidades2" height="40"/> </figure>
+                    <li class="nova nova-pequena">
+                        <figure> <img src="assets/images/photos/Principal_Novidades_02.jpg" alt="Novidades2"/> </figure>
                         <time datetime="2026-01-14">14 de xaneiro de 2026</time>
                         <h3><a href="sections/novidades/actualizacion-roadmap.html">Actualización do Roadmap</a></h3>
                     </li>
-                    <li>
-                        <figure> <img src="assets/images/photos/Principal_Novidades_03.jpg" alt="Novidades3" height="40"/> </figure>
+                    <li class="nova nova-pequena">
+                        <figure> <img src="assets/images/photos/Principal_Novidades_03.jpg" alt="Novidades3"/> </figure>
                         <time datetime="2026-02-03">3 de febreiro de 2026</time>
                         <h3><a href="sections/novidades/exito-farlands.html">O gran éxito de Farlands</a></h3>
                     </li>
-                    <li>
-                        <figure> <img src="assets/images/photos/Principal_Novidades_04.jpg" alt="Novidades4" height="40"/> </figure>
+                    <li class="nova nova-pequena">
+                        <figure> <img src="assets/images/photos/Principal_Novidades_04.jpg" alt="Novidades4"/> </figure>
                         <time datetime="2026-02-08">8 de febreiro de 2026</time>
                         <h3><a href="sections/xogos/evento-gamescom.html">Subreal estará en Gamescom</a></h3>
                     </li>
-                    <li>
+                    <li class="mais-novas">
                         <h3><a href="sections/novidades.html">Máis novas</a></h3>
                     </li>
                 </ul>
             </section>
 
-            <section>
+            <section class="caracteristicas">
                 <h2>Eficiencia e comodidade á túa disposición</h2>
                 <ul>
-                    <li>
-                        <figure> <img src="assets/images/photos/Principal_Caracteristicas_01.jpg" alt="Caracteristicas1" height="40"/> </figure>
+                    <li class="caract">
+                        <figure> <img src="assets/images/photos/Principal_Caracteristicas_01.jpg" alt="Caracteristicas1"/> </figure>
                         <h3><a href="sections/caracteristicas.html#sinxelo-intuitivo">Sinxelo e intuitivo</a></h3>
                         <p>Deseña sen barreiras. A nosa interface contextual elimina o ruído visual, permitíndote
                         iterar mecánicas complexas en minutos. A potencia dun motor líder pero sinxelo e personalizable.</p>
                     </li>
-                    <li>
-                        <figure> <img src="assets/images/photos/Principal_Caracteristicas_02.jpg" alt="Caracteristicas2" height="40"/> </figure>
+                    <li class="caract">
+                        <figure> <img src="assets/images/photos/Principal_Caracteristicas_02.jpg" alt="Caracteristicas2"/> </figure>
                         <h3><a href="sections/caracteristicas.html#versatil">Versátil</a></h3>
                         <p>Subreal permite o desenvolvemento de xogos 2D, 3D ou con calquera tipo de vista e conta con menús fácilmente
                         personalizables para adaptarse ás necesidades do teu xogo.</p>
                     </li>
-                    <li>
-                        <figure> <img src="assets/images/photos/Principal_Caracteristicas_03.jpg" alt="Caracteristicas3" height="40"/> </figure>
+                    <li class="caract">
+                        <figure> <img src="assets/images/photos/Principal_Caracteristicas_03.jpg" alt="Caracteristicas3"/> </figure>
                         <h3><a href="sections/caracteristicas.html#escalable">Escalable</a></h3>
                         <p>Subreal permite abarcar desde proxectos académicos ata grandes produccións. Grazas á integración con git e ás
                         ferrmentas de organización de assets e seccións, o motor facilita un desenvolvemento cómodo para calquera obxectivo.</p>
@@ -111,7 +116,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="xogos">
                 <h2>Feitos con Subreal Engine</h2>
                 <ul>
                     <li>
@@ -158,7 +163,7 @@
                 <h3><a href="sections/xogos.html">Coñece máis</a></h3>
             </section>
 
-            <section>
+            <section class="descargas">
                 <h2>Comeza agora</h2>
                 <ul>
                     <li>
@@ -201,7 +206,7 @@
 
         <footer>
             <figure> <img src="assets/images/Logo_Subreal_Blanco.png" alt="Logo Subreal Engine" height="40"/> </figure>
-            <p>© 2026, Subreal Company SA. Todos os dereitos reservados. Subreal Engine e o seu logotipo son<br>
+            <p>© 2026, Subreal Company SA. Todos os dereitos reservados. Subreal Engine e o seu logotipo son <!-- <br> -->
                 marcas rexistradas ou marcas comerciais de Subreal Company en todo o mundo.</p>
         </footer>
     </body>

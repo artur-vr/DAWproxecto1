@@ -14,9 +14,31 @@ h1 {
 	color: #8BE8CB;
 }
 
+h4 {
+    color: #ADADAD;
+}
 
 
-/*Header*/
+
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	color: #D9D9D9;
+}
+
+ul {
+	list-style: none;
+}
+
+
+
+/*********
+* HEADER *
+**********/
 header {
 	display: flex;
 	align-items: center;
@@ -32,33 +54,36 @@ header {
 	display: block;
 }*/
 
+/*menu esquerdo*/
 .menu {
 	display: flex;
-	list-style: none;
 	gap: 2rem;
 }
 
-.menu a {
-	text-decoration: none;
-	color: #fff;
-}
-
-.menu a:hover {
-	color: #D9D9D9;
-}
-
+/*barra busca*/
 .barra-busca {
 	display: flex;
 	gap: .5rem;
 }
 
-
+/*menu dereito*/
 .social {
 	display: flex;
 	list-style: none;
 	gap: 3rem;
 	margin-right: 3rem;
 }
+
+
+/*********
+* FOOTER *
+**********/
+footer {
+	display: flex;
+	font-size: 75%;
+}
+
+
 
 
 
