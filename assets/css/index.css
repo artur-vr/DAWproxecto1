@@ -147,4 +147,8 @@ time {
 * Sección Descargas
 */
 
+.plans ul {
+    list-style: disc;
+}
+
 

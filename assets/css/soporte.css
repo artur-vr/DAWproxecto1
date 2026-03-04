@@ -1,0 +1,68 @@
+p {
+    color: #ADADAD;
+}
+
+
+/*
+* Sección FAQ
+*/
+
+.faq {
+    background-image: url(../images/photos/Aprendizaxe_Ferramentas_01.jpg); /*imaxe de fondo*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 6rem 5rem;
+
+    display: flex;
+    justify-content: left;
+}
+
+.faq h2 {
+    color: white;
+    font-size: 200%;
+    margin-bottom: 2rem;
+}
+
+.faq ul { /*logo e texto do titulo, arrodeados por un recadro gris semitransparente*/
+    background-color: #272727;
+
+    padding: 2rem 3rem;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.faq h3 {
+    color: #8BE8CB;
+}
+
+
+/*
+* Sección Contacto
+*/
+
+.contacto {
+    padding: 3rem 5rem;
+}
+
+.contacto ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.contacto li {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.contacto h2 {
+    color: #8BE8CB;
+    font-size: 200%;
+    margin-bottom: 2rem;
+}
