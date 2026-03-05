@@ -17,7 +17,7 @@ time {
 */
 
 .titulo {
-    background-image: url(../images/photos/titulo1.jpg); /*imaxe de fondo*/
+    background-image: url(../images/photos/titulo_index.webp); /*imaxe de fondo*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@ time {
     padding: 6rem 5rem;
 
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 .contido-titulo { /*logo e texto do titulo, arrodeados por un recadro gris semitransparente*/
