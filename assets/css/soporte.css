@@ -8,7 +8,7 @@ p {
 */
 
 .faq {
-    background-image: url(../images/photos/Aprendizaxe_Ferramentas_01.jpg); /*imaxe de fondo*/
+    background-image: url(../images/photos/titulo_soporte.jpg); /*imaxe de fondo*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ p {
 }
 
 .faq h2 {
-    color: white;
+    color: black;
     font-size: 200%;
     margin-bottom: 2rem;
 }

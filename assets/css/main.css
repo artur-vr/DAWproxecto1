@@ -18,6 +18,10 @@ h4 {
     color: #ADADAD;
 }
 
+time {
+    color: #ADADAD;
+    font-size: .8rem;
+}
 
 
 
@@ -81,6 +85,7 @@ header {
 footer {
 	display: flex;
 	font-size: 75%;
+	background: #272727;
 }
 
 

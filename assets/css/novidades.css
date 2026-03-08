@@ -1,0 +1,85 @@
+/* Páxina con FLEX CONTAINER */
+h2 {
+    color: #8BE8CB;
+    font-size: 200%;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+
+/*Roadmap*/
+
+.roadmap {
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 2rem;
+}
+
+.contido-roadmap { 
+    background-color: #272727;
+
+    padding: 2rem 3rem;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.contido-roadmap ul {
+    list-style: disc;
+}
+
+.roadmap a{
+    background: #8BE8CB;
+    color: black;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    align-self: flex-end;
+}
+
+.roadmap a:hover{
+    background:#76cdb1;
+}
+
+/*Novidades*/
+.novidades {
+    padding: 3rem 3rem;
+
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.novidades article {
+    background-color: #272727;
+    border-radius: 20px;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.imaxe-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.imaxe-data img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    
+    border-radius: 15px;
+    width: 250px;
+}
+
+.imaxe-data time {
+    margin-left: 2rem;
+}

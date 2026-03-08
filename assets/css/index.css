@@ -7,10 +7,10 @@ p {
     color: #ADADAD;
 }
 
-time {
+/* time {
     color: #ADADAD;
     font-size: .8rem;
-}
+} */
 
 /*
 * Sección Título
@@ -41,6 +41,7 @@ time {
 .texto-titulo h1{
     /* font-size: 3rem;
 	color: #8BE8CB; */
+    font-weight: bold;
     text-shadow: 0 2px 10px rgba(0,0,0,0.75); /*tamaño, cor e sombra do titulo*/
 }
 

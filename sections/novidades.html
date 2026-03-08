@@ -7,12 +7,13 @@
         <meta name="description" content="Subreal Engine é un motor de xogo."/>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="stylesheet" href="../assets/css/novidades.css">
     </head>
     <body>
         <header>
-            <nav>
-                <figure><a href="../index.html"><img src="../assets/images/Logo_Subreal_Blanco.png" alt="Logo Subreal Engine" height="40"/></a></figure>
-                <ul>
+            <nav class="nav-principal">
+                <figure class="logo-header"><a href="../index.html"><img src="../assets/images/Logo_Subreal_Blanco.png" alt="Logo Subreal Engine" height="40"/></a></figure>
+                <ul class="menu">
                     <li><a href="descarga.html">Descarga</a></li>
                     <li><a href="recursos.html">Recursos</a></li>
                     <li><a href="novidades.html">Novidades</a></li>
@@ -21,14 +22,14 @@
                 </ul>
             </nav>
 
-            <form class="barra-busca" action="recursos.html" method="get">
-                <label for="busca" class="sr-only">Buscar</label>
+            <form class="barra-busca" action="sections/recursos.html" method="get">
+                <!-- <label for="busca" class="sr-only">Buscar</label> -->
                 <input type="search" id="busca" name="q" placeholder="Buscar...">
                 <input type="submit">
             </form>
             
-            <nav>
-                <ul>
+            <nav class="nav-social">
+                <ul class="social">
                     <li>
                         <a href="https://www.instagram.com/subrealengine_es">
                         <img src="../assets/images/icons/Instagram.svg" alt="Instagram" height="40">
@@ -49,45 +50,63 @@
         </header>
 
         <main>
-            <section>
+            <section class="roadmap">
                 <h2>Roadmap</h2>
-                <h3>Próximos pasos</h3>
-                <ul>
-                    <li>Implementación de soporte para motores de física avanzados</li>
-                    <li>Compatibilidade con sistemas operativos Linux e macOS</li>
-                    <li>Actualización da documentación técnica e tutoriais</li>
-                </ul>
-                <a href="../assets/docs/Roadmap.pdf">Descargar Documento</a>
+                <div class="contido-roadmap">
+                    <h3>Próximos pasos</h3>
+                    <ul>
+                        <li>Implementación de soporte para motores de física avanzados</li>
+                        <li>Compatibilidade con sistemas operativos Linux e macOS</li>
+                        <li>Actualización da documentación técnica e tutoriais</li>
+                    </ul>
+                    <a href="../assets/docs/Roadmap.pdf">Descargar Documento</a>
+                </div>
             </section>
             
-            <section>     
+            <section class="novidades">     
                 <h2>Novidades destacadas</h2>
                 <article id="subreal-awards">
-                    <figure> <img src="../assets/images/photos/Principal_Novidades_01.jpg" alt="Subreal Awards 2025" height="120"/> </figure>
-                    <time datetime="2025-12-27">27 de decembro de 2025</time>
-                    <h3><a href="novidades/subreal-awards-2025.html">Xa están aquí os Subreal Awards 2025!</a></h3>
-                    <p>Descobre cales foron os xogos premiados deste ano e que proxectos marcaron tendencia na comunidade.</p>
+                    <div class="imaxe-data">
+                        <figure> <img src="../assets/images/photos/Principal_Novidades_01.jpg" alt="Subreal Awards 2025"/> </figure>
+                        <time datetime="2025-12-27">27 de decembro de 2025</time>
+                    </div>
+                    <div class="titulo-subtitulo">
+                        <h3><a href="novidades/subreal-awards-2025.html">Xa están aquí os Subreal Awards 2025!</a></h3>
+                        <p>Descobre cales foron os xogos premiados deste ano e que proxectos marcaron tendencia na comunidade.</p>
+                    </div>
                 </article>
 
                 <article id="actualizacion-roadmap">
-                    <figure> <img src="../assets/images/photos/Principal_Novidades_02.jpg" alt="Actualización Roadmap" height="120"/> </figure>
-                    <time datetime="2026-01-14">14 de xaneiro de 2026</time>
-                    <h3><a href="novidades/actualizacion-roadmap.html">Actualización do Roadmap</a></h3>
-                    <p>Publicamos os próximos obxectivos de desenvolvemento do motor, con melloras en rendemento e ferramentas.</p>
+                    <div class="imaxe-data">
+                        <figure> <img src="../assets/images/photos/Principal_Novidades_02.jpg" alt="Actualización Roadmap"/> </figure>
+                        <time datetime="2026-01-14">14 de xaneiro de 2026</time>
+                    </div>
+                    <div class="titulo-subtitulo">
+                        <h3><a href="novidades/actualizacion-roadmap.html">Actualización do Roadmap</a></h3>
+                        <p>Publicamos os próximos obxectivos de desenvolvemento do motor, con melloras en rendemento e ferramentas.</p>
+                    </div>
                 </article>
 
                 <article id="exito-farlands">
-                    <figure> <img src="../assets/images/photos/Principal_Novidades_03.jpg" alt="Éxito de Farlands" height="120"/> </figure>
-                    <time datetime="2026-02-03">3 de febreiro de 2026</time>
-                    <h3><a href="novidades/exito-farlands.html">O gran éxito de Farlands</a></h3>
-                    <p>Farlands convértese nun caso de éxito da escena indie grazas ao traballo do estudo e ás capacidades de Subreal Engine.</p>
+                    <div class="imaxe-data">
+                        <figure> <img src="../assets/images/photos/Principal_Novidades_03.jpg" alt="Éxito de Farlands"/> </figure>
+                        <time datetime="2026-02-03">3 de febreiro de 2026</time>
+                    </div>
+                    <div class="titulo-subtitulo">
+                        <h3><a href="novidades/exito-farlands.html">O gran éxito de Farlands</a></h3>
+                        <p>Farlands convértese nun caso de éxito da escena indie grazas ao traballo do estudo e ás capacidades de Subreal Engine.</p>
+                    </div>
                 </article>
 
                 <article id="subreal-gamescom">
-                    <figure> <img src="../assets/images/photos/Principal_Novidades_04.jpg" alt="Subreal en Gamescom" height="120"/> </figure>
-                    <time datetime="2026-02-08">8 de febreiro de 2026</time>
-                    <h3><a href="xogos/evento-gamescom.html">Subreal estará en Gamescom</a></h3>
-                    <p>Anunciamos a participación de Subreal na próxima Gamescom con demos, charlas técnicas e actividades da comunidade.</p>
+                    <div class="imaxe-data">
+                        <figure> <img src="../assets/images/photos/Principal_Novidades_04.jpg" alt="Subreal en Gamescom"/> </figure>
+                        <time datetime="2026-02-08">8 de febreiro de 2026</time>
+                    </div>
+                    <div class="titulo-subtitulo">
+                        <h3><a href="xogos/evento-gamescom.html">Subreal estará en Gamescom</a></h3>
+                        <p>Anunciamos a participación de Subreal na próxima Gamescom con demos, charlas técnicas e actividades da comunidade.</p>
+                    </div>
                 </article>
             </section>
         </main>
