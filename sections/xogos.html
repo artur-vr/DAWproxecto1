@@ -6,167 +6,411 @@
         <meta name="authors" content="Alexandre Lorenzo Martínez, Artur Vázquez Rego"/>
         <meta name="description" content="Subreal Engine é un motor de xogo."/>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.css">
+        <script src="../assets/js/bootstrap.bundle.js"></script>
+        <!-- <link rel="stylesheet" href="../assets/css/main.css"> -->
     </head>
-    <body>
-        <header>
-            <nav class="nav-principal">
-                <figure class="logo-header"><a href="../index.html"><img src="../assets/images/Logo_Subreal_Blanco.png" alt="Logo Subreal Engine" height="40"/></a></figure>
-                <ul class="menu">
-                    <li><a href="descarga.html">Descarga</a></li>
-                    <li><a href="recursos.html">Recursos</a></li>
-                    <li><a href="novidades.html">Novidades</a></li>
-                    <li><a href="xogos.html">Xogos</a></li>
-                    <li><a href="soporte.html">Soporte</a></li>
-                </ul>
-            </nav>
 
-            <form class="barra-busca" action="sections/recursos.html" method="get">
-                <!-- <label for="busca" class="sr-only">Buscar</label> -->
-                <input type="search" id="busca" name="q" placeholder="Buscar...">
-                <input type="submit">
-            </form>
-            
-            <nav class="nav-social">
-                <ul class="social">
-                    <li>
+    <body class="bg-black text-white">
+        <header>
+            <nav class="navbar navbar-dark px-3">
+                <div class="container-fluid d-flex align-items-center">
+                    <figure class="navbar-brand me-4"><a href="../index.html"><img src="../assets/images/Logo_Subreal_Blanco.png" alt="Logo Subreal Engine" height="40"/></a></figure>
+                    
+                    <ul class="navbar-nav flex-row gap-3 me-auto">
+                        <li class="nav-item"><a class="nav-link" href="descarga.html">Descarga</a></li>
+                        <li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="novidades.html">Novidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="xogos.html">Xogos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
+                    </ul>
+
+                    <form class="d-flex me-4" action="sections/recursos.html" method="get">
+                        <!-- <label for="busca" class="sr-only">Buscar</label> -->
+                        <input class="form-control me-2" type="search" placeholder="Buscar...">
+                        <button class="btn btn-outline-light">Buscar</button>
+                    </form>
+                    
+                    <div class="d-flex gap-3">
+                
                         <a href="https://www.instagram.com/subrealengine_es">
                         <img src="../assets/images/icons/Instagram.svg" alt="Instagram" height="40">
                         </a>
-                    </li>
-                    <li>
+                    
                         <a href="https://www.youtube.com/subrealengine">
                         <img src="../assets/images/icons/YouTube.svg" alt="YouTube" height="40">
                         </a>
-                    </li>
-                    <li>
+                    
                         <a href="https://x.com/subrealengine">
                         <img src="../assets/images/icons/X.svg" alt="X (twitter)" height="40">
                         </a>
-                    </li>
-                </ul>
+                        
+                    </div>
+                </div>
             </nav>
         </header>
 
-        <main>
-            <section>
-                <h2>Premios</h2>
-                <ul>
-                    <li>
-                        <figure> <img src="../assets/images/photos/premio-farlands.webp" alt="Farlands" height="120"/> </figure>
-                        <h3><a href="xogos/premio-game-awards.html">The Game Awards 2025 - Mellor Dirección Artística</a></h3>
-                        <p>Farlands destaca pola súa dirección artística inmersiva nun mundo aberto cheo de tecnoloxía antiga e con teleportación.</p>
+        <main class="container-fluid px-3 px-md-4 px-xl-5">
+            <section class="my-5">
+                <h2 class="mb-4" style="color: #8BE8CB;">Premios</h2>
+                <ul class="row g-4 list-unstyled">
+                    <li class="col-md-4">
+                        <article class="h-100 text-bg-dark rounded-3 p-3">
+                            <figure class="mb-3"> <img class="img-fluid w-100 rounded-2" src="../assets/images/photos/premio-farlands.webp" alt="Farlands" height="120"/> </figure>
+                            <h3><a href="xogos/premio-game-awards.html" class="text-white text-decoration-none">The Game Awards 2025 - Mellor Dirección Artística</a></h3>
+                            <p class="mb-0 text-white-50">Farlands destaca pola súa dirección artística inmersiva nun mundo aberto cheo de tecnoloxía antiga e con teleportación.</p>
+                        </article>
                     </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/premio-echoes-of-time.jpg" alt="Echoes of Time" height="120"/> </figure>
-                        <h3><a href="xogos/premio-bafta.html">BAFTA Games Awards 2025 - Mellor Deseño de Xogo</a></h3>
-                        <p>Echoes of Time ofrece un deseño innovador con mecánicas únicas que transforman a experiencia de xogo...</p>
+                    <li class="col-md-4">
+                        <article class="h-100 text-bg-dark rounded-3 p-3">
+                            <figure class="mb-3"> <img class="img-fluid w-100 rounded-2" src="../assets/images/photos/premio-echoes-of-time.jpg" alt="Echoes of Time" height="120"/> </figure>
+                            <h3><a href="xogos/premio-bafta.html" class="text-white text-decoration-none">BAFTA Games Awards 2025 - Mellor Deseño de Xogo</a></h3>
+                            <p class="mb-0 text-white-50">Echoes of Time ofrece un deseño innovador con mecánicas únicas que transforman a experiencia de xogo...</p>
+                        </article>
                     </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/premio-chromatic.jpg" alt="Chromatic" height="120"/> </figure>
-                        <h3><a href="xogos/premio-golden-joystick.html">Golden Joystick Awards 2025 - Mellor Xogo Indie</a></h3>
-                        <p>Chromatic é un xogo de plataformas artístico que destaca pola súa estética visual e mecánicas creativas...</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Catálogo de xogos</h2>
-                <ul>
-                    <li>
-                        <figure> <img src="../assets/images/photos/Principal_Xogos_01.png" alt="Blasphemous 2" height="100"/> </figure>
-                        <h3><a href="xogos/xogo-blasphemous2.html">Blasphemous 2</a></h3>
-                        <p>The Game Kitchen</p>
-                    </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/xogo-void-runner.jpg" alt="Void Runner" height="100"/> </figure>
-                        <h3><a href="xogos/xogo-void-runner.html">Void Runner</a></h3>
-                        <p>Stellar Games</p>
-                    </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/Principal_Xogos_02.jpg" alt="Subnautica" height="100"/> </figure>
-                        <h3><a href="xogos/xogo-subnautica.html">Subnautica</a></h3>
-                        <p>Unknown Worlds Entertainment</p>
-                    </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/Principal_Xogos_03.jpg" alt="Town to City" height="100"/> </figure>
-                        <h3><a href="xogos/xogo-town-to-city.html">Town to City</a></h3>
-                        <p>Galaxy Grove</p>
-                    </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/xogo-crystal-maze.jpg" alt="Crystal Maze" height="100"/> </figure>
-                        <h3><a href="xogos/xogo-crystal-maze.html">Crystal Maze</a></h3>
-                        <p>Prismatic Dev</p>
-                    </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/xogo-drift-legends.jpg" alt="Drift Legends" height="100"/> </figure>
-                        <h3><a href="xogos/xogo-drift-legends.html">Drift Legends</a></h3>
-                        <p>Velocity Studios</p>
-                    </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/xogo-mystic-tower.png" alt="Mystic Tower" height="100"/> </figure>
-                        <h3><a href="xogos/xogo-mystic-tower.html">Mystic Tower</a></h3>
-                        <p>Arcane Labs</p>
-                    </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/Principal_Xogos_04.png" alt="2XKO" height="100"/> </figure>
-                        <h3><a href="xogos/xogo-2xko.html">2XKO</a></h3>
-                        <p>Riot Games</p>
-                    </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/Principal_Xogos_05.jpg" alt="Mewgenics" height="100"/> </figure>
-                        <h3><a href="xogos/xogo-mewgenics.html">Mewgenics</a></h3>
-                        <p>Edmund McMillen</p>
-                    </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/Principal_Xogos_06.jpg" alt="Jurassic World Evolution" height="100"/> </figure>
-                        <h3><a href="xogos/xogo-jurassic-world-evolution.html">Jurassic World Evolution</a></h3>
-                        <p>Frontier Developments</p>
-                    </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/Principal_Xogos_07.jpg" alt="Kena Bridge of Spirits" height="100"/> </figure>
-                        <h3><a href="xogos/xogo-kena.html">Kena Bridge of Spirits</a></h3>
-                        <p>Galaxy Grove</p>
-                    </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/Principal_Xogos_08.jpg" alt="Jedi Fallen Order" height="100"/> </figure>
-                        <h3><a href="xogos/xogo-jedi-fallen-order.html">Jedi Fallen Order</a></h3>
-                        <p>Respawn Entertainment</p>
+                    <li class="col-md-4">
+                        <article class="h-100 text-bg-dark rounded-3 p-3">
+                            <figure class="mb-3"> <img class="img-fluid w-100 rounded-2" src="../assets/images/photos/premio-chromatic.jpg" alt="Chromatic" height="120"/> </figure>
+                            <h3><a href="xogos/premio-golden-joystick.html" class="text-white text-decoration-none">Golden Joystick Awards 2025 - Mellor Xogo Indie</a></h3>
+                            <p class="mb-0 text-white-50">Chromatic é un xogo de plataformas artístico que destaca pola súa estética visual e mecánicas creativas...</p>
+                        </article>
                     </li>
                 </ul>
             </section>
 
             <section>
-                <h2>Eventos e Competicións</h2>
-                <ul>
-                    <li>
-                        <figure> <img src="../assets/images/photos/evento-game-jam-2026.jpg" alt="Game Jam 2026" height="120"/> </figure>
-                        <time datetime="2026-03-15">15 de marzo de 2026</time>
-                        <h3><a href="xogos/evento-game-jam-2026.html">Game Jam 2026</a></h3>
+                <h2 style="color: #8BE8CB;">Catálogo de xogos</h2>
+                <div id="xogos" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <ul class="list-unstyled d-flex gap-3">
+
+                                <li class="text-bg-dark border-0 flex-fill position-relative">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/Principal_Xogos_01.png" class="w-100 h-100 object-fit-cover" alt="Blasphemous 2"></figure>
+                                    </div>
+
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-end p-3" style="background: linear-gradient(to top, black, transparent 125%);">
+                                        <h3 class="m-0"><a href="xogos/xogo-blasphemous2.html" class="text-white text-decoration-none fw-bold">Blasphemous 2</a></h3>
+                                        <p class="m-0 small text-white-50">The Game Kitchen</p>
+                                    </div>
+
+                                </li>
+
+                                <li class="text-bg-dark border-0 flex-fill position-relative">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/xogo-void-runner.jpg" class="w-100 h-100 object-fit-cover" alt="Void Runner"></figure>
+                                    </div>
+
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-end p-3" style="background: linear-gradient(to top, black, transparent 125%);">
+                                        <h3 class="m-0"><a href="xogos/xogo-void-runner.html" class="text-white text-decoration-none fw-bold">Void Runner</a></h3>
+                                        <p class="m-0 small text-white-50">Stellar Games</p>
+                                    </div>
+
+                                </li>
+
+                                <li class="text-bg-dark border-0 flex-fill position-relative">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/Principal_Xogos_02.jpg" class="w-100 h-100 object-fit-cover" alt="Subnautica"></figure>
+                                    </div>
+
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-end p-3" style="background: linear-gradient(to top, black, transparent 125%);">
+                                        <h3 class="m-0"><a href="xogos/xogo-subnautica.html" class="text-white text-decoration-none fw-bold">Subnautica</a></h3>
+                                        <p class="m-0 small text-white-50">Unknown Worlds Entertainment</p>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        
+                        <!-- <div class="carousel-item">
+                            <ul class="list-unstyled d-flex gap-3">
+                                <li class="card text-bg-dark border-0 flex-fill">
+                                    <figure> <img class="card-img-top img-fluid" src="../assets/images/photos/Principal_Xogos_03.jpg" alt="Town to City" height="300px"/> </figure>
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end text-end">
+                                        <h3 class="card-title"><a href="xogos/xogo-town-to-city.html" class="text-white text-decoration-none">Town to City</a></h3>
+                                        <p class="card-text">Galaxy Grove</p>
+                                    </div>
+                                </li>
+                                <li class="card text-bg-dark border-0 flex-fill">
+                                    <figure> <img class="card-img-top img-fluid" src="../assets/images/photos/xogo-crystal-maze.jpg" alt="Crystal Maze" height="300px"/> </figure>
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end text-end">
+                                        <h3 class="card-title"><a href="xogos/xogo-crystal-maze.html" class="text-white text-decoration-none">Crystal Maze</a></h3>
+                                        <p class="card-text">Prismatic Dev</p>
+                                    </div>
+                                </li>
+                                <li class="card text-bg-dark border-0 flex-fill">
+                                    <figure> <img class="card-img-top img-fluid" src="../assets/images/photos/xogo-drift-legends.jpg" alt="Drift Legends" height="300px"/> </figure>
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end text-end">
+                                        <h3 class="card-title"><a href="xogos/xogo-drift-legends.html" class="text-white text-decoration-none">Drift Legends</a></h3>
+                                        <p class="card-text">Velocity Studios</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> -->
+
+                        <!-- <div class="carousel-item">
+                            <ul class="list-unstyled d-flex gap-3">
+
+                                <li class="card text-bg-dark border-0 flex-fill">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/Principal_Xogos_03.jpg" alt="Town to City"></figure>
+                                    </div>
+
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end text-end">
+                                        <h3 class="card-title">
+                                            <a href="xogos/xogo-town-to-city.html" class="text-white text-decoration-none">Town to City</a>
+                                        </h3>
+                                        <p class="card-text">Galaxy Grove</p>
+                                    </div>
+
+                                </li>
+
+                                <li class="card text-bg-dark border-0 flex-fill">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/xogo-crystal-maze.jpg" alt="Crystal Maze"></figure>
+                                    </div>
+
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end text-end">
+                                        <h3 class="card-title">
+                                            <a href="xogos/xogo-crystal-maze.html" class="text-white text-decoration-none">Crystal Maze</a>
+                                        </h3>
+                                        <p class="card-text">Prismatic Dev</p>
+                                    </div>
+
+                                </li>
+
+                                <li class="card text-bg-dark border-0 flex-fill">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/xogo-drift-legends.jpg" alt="Drift Legends"></figure>
+                                    </div>
+
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end text-end">
+                                        <h3 class="card-title">
+                                            <a href="xogos/xogo-drift-legends.html" class="text-white text-decoration-none">Drift Legends</a>
+                                        </h3>
+                                        <p class="card-text">Velocity Studios</p>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div> -->
+
+                        <div class="carousel-item">
+                            <ul class="list-unstyled d-flex gap-3">
+
+                                <li class="text-bg-dark border-0 flex-fill position-relative">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/Principal_Xogos_03.jpg" class="w-100 h-100 object-fit-cover" alt="Town to City"></figure>
+                                    </div>
+
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-end p-3" style="background: linear-gradient(to top, black, transparent 125%);">
+                                        <h3 class="m-0"><a href="xogos/xogo-town-to-city.html" class="text-white text-decoration-none fw-bold">Town to City</a></h3>
+                                        <p class="m-0 small text-white-50">Galaxy Grove</p>
+                                    </div>
+
+                                </li>
+
+                                <li class="text-bg-dark border-0 flex-fill position-relative">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/xogo-crystal-maze.jpg" class="w-100 h-100 object-fit-cover" alt="Crystal Maze"></figure>
+                                    </div>
+
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-end p-3" style="background: linear-gradient(to top, black, transparent 125%);">
+                                        <h3 class="m-0"><a href="xogos/xogo-crystal-maze.html" class="text-white text-decoration-none fw-bold">Crystal Maze</a></h3>
+                                        <p class="m-0 small text-white-50">Prismatic Dev</p>
+                                    </div>
+
+                                </li>
+
+                                <li class="text-bg-dark border-0 flex-fill position-relative">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/xogo-drift-legends.jpg" class="w-100 h-100 object-fit-cover" alt="Drift Legends"></figure>
+                                    </div>
+
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-end p-3" style="background: linear-gradient(to top, black, transparent 125%);">
+                                        <h3 class="m-0"><a href="xogos/xogo-drift-legends.html" class="text-white text-decoration-none fw-bold">Drift Legends</a></h3>
+                                        <p class="m-0 small text-white-50">Velocity Studios</p>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="carousel-item">
+                            <ul class="list-unstyled d-flex gap-3">
+
+                                <li class="text-bg-dark border-0 flex-fill position-relative">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/xogo-mystic-tower.png" class="w-100 h-100 object-fit-cover" alt="Mystic Tower"></figure>
+                                    </div>
+
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-end p-3" style="background: linear-gradient(to top, black, transparent 125%);">
+                                        <h3 class="m-0"><a href="xogos/xogo-mystic-tower.html" class="text-white text-decoration-none fw-bold">Mystic Tower</a></h3>
+                                        <p class="m-0 small text-white-50">Arcane Labs</p>
+                                    </div>
+
+                                </li>
+
+                                <li class="text-bg-dark border-0 flex-fill position-relative">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/Principal_Xogos_04.png" class="w-100 h-100 object-fit-cover" alt="2XKO"></figure>
+                                    </div>
+
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-end p-3" style="background: linear-gradient(to top, black, transparent 125%);">
+                                        <h3 class="m-0"><a href="xogos/xogo-2xko.html" class="text-white text-decoration-none fw-bold">2XKO</a></h3>
+                                        <p class="m-0 small text-white-50">Riot Games</p>
+                                    </div>
+
+                                </li>
+
+                                <li class="text-bg-dark border-0 flex-fill position-relative">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/Principal_Xogos_05.jpg" class="w-100 h-100 object-fit-cover" alt="Mewgenics"></figure>
+                                    </div>
+
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-end p-3" style="background: linear-gradient(to top, black, transparent 125%);">
+                                        <h3 class="m-0"><a href="xogos/xogo-mewgenics.html" class="text-white text-decoration-none fw-bold">Mewgenics</a></h3>
+                                        <p class="m-0 small text-white-50">Edmund McMillen</p>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="carousel-item">
+                            <ul class="list-unstyled d-flex gap-3">
+
+                                <li class="text-bg-dark border-0 flex-fill position-relative">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/Principal_Xogos_06.jpg" class="w-100 h-100 object-fit-cover" alt="Jurassic World Evolution"></figure>
+                                    </div>
+
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-end p-3" style="background: linear-gradient(to top, black, transparent 125%);">
+                                        <h3 class="m-0"><a href="xogos/xogo-jurassic-world-evolution.html" class="text-white text-decoration-none fw-bold">Jurassic World Evolution</a></h3>
+                                        <p class="m-0 small text-white-50">Frontier Developments</p>
+                                    </div>
+
+                                </li>
+
+                                <li class="text-bg-dark border-0 flex-fill position-relative">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/Principal_Xogos_07.jpg" class="w-100 h-100 object-fit-cover" alt="Kena Bridge of Spirits"></figure>
+                                    </div>
+
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-end p-3" style="background: linear-gradient(to top, black, transparent 125%);">
+                                        <h3 class="m-0"><a href="xogos/xogo-kena.html" class="text-white text-decoration-none fw-bold">Kena Bridge of Spirits</a></h3>
+                                        <p class="m-0 small text-white-50">Galaxy Grove</p>
+                                    </div>
+
+                                </li>
+
+                                <li class="text-bg-dark border-0 flex-fill position-relative">
+
+                                    <div class="ratio" style="--bs-aspect-ratio: 125%;">
+                                        <figure><img src="../assets/images/photos/Principal_Xogos_08.jpg" class="w-100 h-100 object-fit-cover" alt="Jedi Fallen Order"></figure>
+                                    </div>
+
+                                    <div class="position-absolute bottom-0 start-0 w-100 text-end p-3" style="background: linear-gradient(to top, black, transparent 125%);">
+                                        <h3 class="m-0"><a href="xogos/xogo-jedi-fallen-order.html" class="text-white text-decoration-none fw-bold">Jedi Fallen Order</a></h3>
+                                        <p class="m-0 small text-white-50">Respawn Entertainment</p>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#xogos" data-bs-slide="prev" style="width: 8%; opacity: 1;">
+                        <span class="carousel-control-prev-icon rounded-circle border border-light p-3" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.65);"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#xogos" data-bs-slide="next" style="width: 8%; opacity: 1;">
+                        <span class="carousel-control-next-icon rounded-circle border border-light p-3" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.65);"></span>
+                        <span class="visually-hidden">Seguinte</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="my-5">
+                <h2 class="mb-4" style="color: #8BE8CB;">Eventos e Competicións</h2>
+
+                <article class="text-bg-dark rounded-3 p-3 mb-4">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-md-4">
+                            <a href="xogos/evento-game-jam-2026.html" class="d-block ratio overflow-hidden rounded-2" style="--bs-aspect-ratio: 56.25%;">
+                                <img src="../assets/images/photos/evento-game-jam-2026.jpg" class="w-100 h-100 object-fit-cover" alt="Game Jam 2026"/>
+                            </a>
+                        </div>
+                        <div class="col-md-8 d-flex flex-column">
+                            <time datetime="2026-03-15" class="small text-white-50">15 de marzo de 2026</time>
+                            <h3 class="h4 my-2"><a href="xogos/evento-game-jam-2026.html" class="text-white text-decoration-none">Game Jam 2026</a></h3>
+                            <p class="mb-3 text-white-50">48 horas para crear prototipos con Subreal Engine, mentorías en directo e premio ao mellor concepto.</p>
+                            <div class="text-end mt-auto">
+                                <a href="xogos/evento-game-jam-2026.html" class="btn fw-semibold px-4 py-2" style="background-color: #8BE8CB; border-color: #8BE8CB; color: #111111;">Ler máis</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <ul class="row g-4 list-unstyled mb-0">
+                    <li class="col-md-4">
+                        <article class="h-100 text-bg-dark rounded-3 p-3 d-flex flex-column">
+                            <figure class="mb-3 ratio overflow-hidden rounded-2" style="--bs-aspect-ratio: 56.25%;"><img src="../assets/images/photos/evento-campeonato-online.png" class="w-100 h-100 object-fit-cover" alt="Campeonato Online"/></figure>
+                            <time datetime="2026-04-01" class="small text-white-50">1 de abril de 2026</time>
+                            <h3 class="h5 mt-1 mb-2"><a href="xogos/evento-campeonato-online.html" class="text-white text-decoration-none">Campeonato Online</a></h3>
+                            <p class="small text-white-50 mb-3">Torneo competitivo por equipos con eliminatorias semanais e final en streaming.</p>
+                            <div class="mt-auto text-end">
+                                <a href="xogos/evento-campeonato-online.html" class="btn fw-semibold px-4 py-2" style="background-color: #8BE8CB; border-color: #8BE8CB; color: #111111;">Ler máis</a>
+                            </div>
+                        </article>
                     </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/evento-campeonato-online.png" alt="Campeonato Online" height="120"/> </figure>
-                        <time datetime="2026-04-01">1 de abril de 2026</time>
-                        <h3><a href="xogos/evento-campeonato-online.html">Campeonato Online</a></h3>
+                    <li class="col-md-4">
+                        <article class="h-100 text-bg-dark rounded-3 p-3 d-flex flex-column">
+                            <figure class="mb-3 ratio overflow-hidden rounded-2" style="--bs-aspect-ratio: 56.25%;"><img src="../assets/images/photos/evento-devs-meetup.png" class="w-100 h-100 object-fit-cover" alt="Devs Meetup"/></figure>
+                            <time datetime="2026-06-12" class="small text-white-50">12 de xuño de 2026</time>
+                            <h3 class="h5 mt-1 mb-2"><a href="xogos/evento-devs-meetup.html" class="text-white text-decoration-none">Devs Meetup</a></h3>
+                            <p class="small text-white-50 mb-3">Encontro de desenvolvedores con charlas curtas, networking e demostracións da comunidade.</p>
+                            <div class="mt-auto text-end">
+                                <a href="xogos/evento-devs-meetup.html" class="btn fw-semibold px-4 py-2" style="background-color: #8BE8CB; border-color: #8BE8CB; color: #111111;">Ler máis</a>
+                            </div>
+                        </article>
                     </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/evento-devs-meetup.png" alt="Devs Meetup" height="120"/> </figure>
-                        <time datetime="2026-06-12">12 de xuño de 2026</time>
-                        <h3><a href="xogos/evento-devs-meetup.html">Devs Meetup</a></h3>
-                    </li>
-                    <li>
-                        <figure> <img src="../assets/images/photos/Principal_Novidades_04.jpg" alt="Gamescom 2026" height="120"/> </figure>
-                        <time datetime="2026-02-08">8 de febreiro de 2026</time>
-                        <h3><a href="xogos/evento-gamescom.html">Subreal en Gamescom</a></h3>
+                    <li class="col-md-4">
+                        <article class="h-100 text-bg-dark rounded-3 p-3 d-flex flex-column">
+                            <figure class="mb-3 ratio overflow-hidden rounded-2" style="--bs-aspect-ratio: 56.25%;"><img src="../assets/images/photos/Principal_Novidades_04.jpg" class="w-100 h-100 object-fit-cover" alt="Subreal en Gamescom"/></figure>
+                            <time datetime="2026-02-08" class="small text-white-50">8 de febreiro de 2026</time>
+                            <h3 class="h5 mt-1 mb-2"><a href="xogos/evento-gamescom.html" class="text-white text-decoration-none">Subreal en Gamescom</a></h3>
+                            <p class="small text-white-50 mb-3">Presentación das novidades do motor, sesións en directo e demo técnica no expositor.</p>
+                            <div class="mt-auto text-end">
+                                <a href="xogos/evento-gamescom.html" class="btn fw-semibold px-4 py-2" style="background-color: #8BE8CB; border-color: #8BE8CB; color: #111111;">Ler máis</a>
+                            </div>
+                        </article>
                     </li>
                 </ul>
             </section>
         </main>
 
-        <footer>
-            <figure> <img src="../assets/images/Logo_Subreal_Verde.png" alt="Logo Subreal Engine" height="20"/> </figure>
-            <p>© 2026, Subreal Company SA. Todos os dereitos reservados. Subreal Engine e o seu logotipo son<br>
-                marcas rexistradas ou marcas comerciais de Subreal Company en todo o mundo.</p>
+        <footer class="container-fluid bg-dark py-4 d-flex align-items-center gap-3"> 
+            <figure class="mb-0"> <img src="../assets/images/Logo_Subreal_Verde.png" alt="Logo Subreal Engine" height="20"/> </figure> 
+            <p class="mb-0 small"> © 2026, Subreal Company SA. Todos os dereitos reservados. Subreal Engine e o seu logotipo son<br> marcas rexistradas ou marcas comerciais de Subreal Company en todo o mundo. </p> 
         </footer>
     </body>
 </html>
