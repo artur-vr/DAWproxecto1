@@ -140,16 +140,103 @@ p {
 }
 
 
+
 /*
 * Sección Xogos
 */
+
+.xogos {
+    padding: 4rem 3rem;
+}
+
+.xogos ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 2rem;
+}
+
+.xogo-indiv {
+    background: #272727;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.xogo-indiv img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.conece {
+    display: flex;
+    justify-content: center;
+    margin-top: .85rem;
+}
+
+.conece a {
+    background: #8BE8CB;
+    color: black;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+}
+
+
+
+
+
+
 
 /*
 * Sección Descargas
 */
 
-.plans ul {
-    list-style: disc;
+.descargas {
+    padding: 4rem 3rem;
 }
+
+.descargas ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 2rem;
+}
+
+.plan {
+    background: #272727;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.plan ul {
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.mais-plans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.mais-plans a {
+    background: #8BE8CB;
+    color: black;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+}
+
 
 

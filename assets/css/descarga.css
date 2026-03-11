@@ -1,0 +1,111 @@
+/*
+* Seccion comparativa
+*/
+
+.comparativa {
+	background-image: url(../images/photos/titulo_descargas.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 6rem 5rem;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.comparativa h2 {
+	color: black;
+    margin-left: 3rem;
+}
+
+.comparativa table {
+	width: min(980px, 100%);
+	margin: 0 auto;
+	background: #272727;
+	border-radius: 20px;
+	border-collapse: separate;
+	border-spacing: 0;
+	overflow: hidden;
+}
+
+.comparativa th,
+.comparativa td {
+	padding: 0.6rem 1rem;
+	font-size: 0.8rem;
+}
+
+.plan {
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	
+	font-size: 0.7rem;
+	padding: 1rem 1rem;
+	color: #8BE8CB;
+}
+
+
+.caract {
+	width: 31%;
+	text-align: left;
+	font-weight: 500;
+	color: #c6c6c6;
+	line-height: 1.35;
+}
+
+.comparativa td {
+	text-align: center;
+	font-weight: 700;
+	color: white;
+}
+
+.comparativa tr + tr th,
+.comparativa tr + tr td {
+	border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/*
+* Seccion legal
+*/
+
+.legal {
+	padding: 4rem 5rem;
+}
+
+.legal h2 {
+	color: #8BE8CB;
+	margin-bottom: 2rem;
+	margin-left: 3rem;
+}
+
+
+.legal-documentos {
+	background: #272727;
+	border-radius: 20px;
+	padding: 1rem 3rem;
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+	align-items: center;
+    flex-direction: column;
+	gap: 1rem;
+	margin-left: 3rem;
+}
+
+.legal p{
+    display: flex;
+    gap: 2rem;
+}
+
+.legal a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem 1.5rem;
+	border-radius: 15px;
+	background: #8BE8CB;
+	color: black;
+    font-weight: bold;
+}
+
