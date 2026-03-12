@@ -1,0 +1,53 @@
+main ul{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    list-style: none;
+    padding: 0 7%;
+    gap: 2%;
+}
+
+.aprende-creando{
+    background-image: url(../images/photos/titulo_aprendizaxe.webp);
+}
+
+h2{
+    padding: 3% 7% 1% 7%;
+}
+
+.aprende li{
+    grid-column: span 4;
+    padding: 0% 5% 10% 5%;
+    background-color: #272727;
+    border-radius: 25px;
+    color: #ADADAD;
+    margin-bottom: 20%;
+    display: grid; 
+    grid-template-rows: auto 1fr auto auto;
+}
+
+.titulo{
+    text-align: center;
+    color: #8BE8CB;
+    font-size: 130%;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.fila-inferior {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.aprende li img{
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+.boton {
+    display: inline-block;
+    color: black;
+    background-color: #8BE8CB;
+    padding: 10px 25px;
+    border-radius: 15px;
+}
