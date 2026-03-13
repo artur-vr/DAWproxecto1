@@ -52,6 +52,11 @@ header {
 .nav-principal,
 .nav-social {
 	display: flex;
+	align-items: center;
+}
+
+.nav-principal figure {
+	margin-right: 0rem;
 }
 
 /*.logo img {
@@ -62,6 +67,7 @@ header {
 .menu {
 	font-weight: bold;
 	display: flex;
+	align-items: center;
 	gap: 2rem;
 }
 
@@ -69,6 +75,23 @@ header {
 .barra-busca {
 	display: flex;
 	gap: .5rem;
+}
+
+.barra-busca input[type="search"],
+.barra-busca input[type="submit"] {
+	border-radius: 1rem;
+	padding: .4rem .8rem;
+}
+
+.barra-busca input[type="search"] {
+	background: #ffffff;
+	color: black;
+}
+
+.barra-busca input[type="submit"] {
+	background: #8BE8CB;
+	color: #000;
+	cursor: pointer;
 }
 
 /*menu dereito*/
@@ -80,6 +103,35 @@ header {
 }
 
 
+/* Tamaño grande: reducir gap e iconos */
+@media (max-width: 1300px) {
+	.menu {
+		gap: 1.25rem;
+	}
+	.social {
+		gap: 2rem;
+		margin-right: 1.5rem;
+	}
+}
+
+/* Tamaño medio: encoller fonte e busca */
+@media (max-width: 1100px) {
+	html {
+		font-size: 16px;
+	}
+	.barra-busca input[type="search"] {
+		width: 8rem;
+	}
+	.social {
+		gap: 1.25rem;
+		margin-right: 1rem;
+	}
+	.menu {
+		gap: .9rem;
+	}
+}
+
+
 /*********
 * FOOTER *
 **********/
@@ -87,6 +139,62 @@ footer {
 	display: flex;
 	font-size: 75%;
 	background: #272727;
+    color: #ADADAD;
+}
+
+
+/*******************
+* MENÚ HAMBURGUESA *
+********************/
+.hamburguesa {
+	display: none;
+	background: none;
+	border: 1px solid #555;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 1.3rem;
+	padding: .2rem .55rem;
+	cursor: pointer;
+}
+
+@media (max-width: 860px) {
+	header {
+		flex-wrap: wrap;
+		padding: .5rem 1rem;
+		gap: .5rem;
+	}
+
+	.hamburguesa {
+		display: block;
+		margin-left: auto;
+	}
+
+	.menu,
+	.barra-busca,
+	.nav-social {
+		display: none;
+		width: 100%;
+	}
+
+	header.menu-aberto .menu {
+		display: flex;
+		flex-direction: column;
+		gap: .75rem;
+		padding: .5rem 0;
+	}
+
+	header.menu-aberto .barra-busca {
+		display: flex;
+	}
+
+	header.menu-aberto .nav-social {
+		display: flex;
+	}
+
+	header.menu-aberto .social {
+		margin-right: 0;
+		gap: 1.5rem;
+	}
 }
 
 
