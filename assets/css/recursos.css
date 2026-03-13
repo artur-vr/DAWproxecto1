@@ -8,69 +8,121 @@ main ul{
     gap: 2%;
 }
 
-.seccion-verde{
+.seccion-verde {
     color: #8BE8CB;
 }
 
-
 /*APRENDE CREANDO*/
-
-.aprende-creando{
-    background-image: url(../images/photos/titulo_aprendizaxe.webp);
+main ul.aprende {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    list-style: none;
+    padding: 0 7%;
+    gap: 1.4rem;
+    margin-bottom: 2rem;
 }
 
-h2{
+.aprende-creando {
+    background-image: url(../images/photos/titulo_aprendizaxe.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
     padding: 3% 7% 1% 7%;
 }
 
-.aprende li{
-    grid-column: span 4;
-    padding: 0% 5% 10% 5%;
+.aprende li {
+    display: grid; 
+    grid-template-rows: auto 1fr auto auto;
+    padding: 1.5rem;
     background-color: #272727;
     border-radius: 25px;
     color: #ADADAD;
-    margin-bottom: 20%;
-    display: grid; 
-    grid-template-rows: auto 1fr auto auto;
+    margin-bottom: 5rem;
+    height: auto;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     color: #8BE8CB;
-    font-size: 130%;
+    font-size: clamp(1.2rem, 1.3rem, 1.3rem);
     margin: 0;
-    padding-top: 1rem;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+.aprende li p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    align-self: start; 
 }
 
 .fila-inferior {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-items: center;
+    gap: 1rem;
+    justify-items: center;
 }
 
-.aprende li img{
+.aprende li img {
     height: 5rem;
-    margin-top: 1rem;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .boton {
     display: inline-block;
     color: black;
     background-color: #8BE8CB;
-    padding: 10px 25px;
+    padding: clamp(8px, 1.5vw, 12px) clamp(15px, 2.5vw, 25px);
     border-radius: 15px;
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    width: fit-content;
+}
+
+.fila-inferior a {
+    text-decoration: none;
+    display: contents;
 }
 
 
 /*VIDEO TUTORIAIS*/
 
-.playlist{
-    grid-column: 1 / 6;
-    grid-row: span 2;
-    padding: 1rem;
+.playlist {
+    grid-column: 1 / -1; 
+    padding: min(1.5vw, 1rem);
     background-color: #272727;
     border-radius: 20px;
     color: #ADADAD;
+}
+
+.video, .mais-videos {
+    grid-column: span 6; 
+    background-color: #272727;
+    border-radius: 20px;
+    color: #ADADAD;
+    padding: min(1.5vw, 1rem);
+}
+
+.video-tutoriais img{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 100 / 35;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.mais-videos {
+    align-self: center;
+    justify-self: center;
+    background: none;
 }
 
 .playlist h3{
@@ -79,20 +131,10 @@ h2{
 
 .video-tutoriais{
     margin-bottom: 3rem;
-    grid-template-rows: 1fr 1fr;
 }
 
 .video-tutoriais li{
-    margin-bottom: 1rem;
-}
-
-.video-tutoriais img{
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 100 /35;
-    object-fit: cover;
-    border-radius: 15px;
+    margin-bottom: 1vw;
 }
 
 .video-tutoriais figure {
@@ -103,13 +145,13 @@ h2{
 .video-tutoriais h3{
     font-weight: normal;
     margin: 0;
-    padding: 3% 0 0 0;
+    padding-top: 3%;
 }
 
 .video-tutoriais h4{
     font-weight: normal;
     margin: 0;
-    padding: 3% 0 0 0;
+    padding-top: 3%;
     line-height: 1.6;
 }
 
@@ -117,27 +159,12 @@ h2{
     font-weight: bold;
     font-size: 75%;
     margin: 0;
-    padding: 2% 0 0 0;
-}
-
-.video{
-    grid-column: span 3;
-    grid-row: span 1;
-    padding: 1rem 1rem 0 1rem;
-    background-color: #272727;
-    border-radius: 20px;
-    color: #ADADAD;
+    padding-top: 2%;
 }
 
 .video h3{
     font-size: 100%;
     padding-bottom: 1rem;
-}
-
-.mais-videos{
-    grid-column: span 3;
-    align-self: center;
-    justify-self: center;
 }
 
 .mais-videos h3{
@@ -150,15 +177,66 @@ h2{
     font-weight: bold;
 }
 
+@media (min-width: 850px) {
+    .playlist{
+        grid-column: 1 / 6;
+        grid-row: span 2;
+        padding: min(1.5vw, 1rem);
+        background-color: #272727;
+        border-radius: 20px;
+        color: #ADADAD;
+    }
+
+    .video-tutoriais{
+        margin-bottom: 3rem;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .video{
+        grid-column: span 3;
+        grid-row: span 1;
+        padding: min(1.5vw, 1rem) min(1.5vw, 1rem) 0 min(1.5vw, 1rem);
+        background-color: #272727;
+        border-radius: 20px;
+        color: #ADADAD;
+    }
+
+    .mais-videos{
+        grid-column: span 3;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
 /*FERRAMENTAS*/
 
-.ferramentas li{
-    grid-column: span 4;
+.ferramentas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 7%;
+    list-style: none;
+}
+
+.ferramentas li {
+    grid-column: span 1;
     padding: 1rem;
     background-color: #272727;
     border-radius: 25px;
-    margin-bottom: 10%;
-    display: grid; 
+    display: grid;
+    margin-bottom: 1rem; 
+}
+
+@media (min-width: 850px) {
+    .ferramentas {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2%;
+    }
+
+    .ferramentas li {
+        grid-column: span 4;
+        margin-bottom: 5%;
+    }
 }
 
 .ferramentas h3{
@@ -170,7 +248,7 @@ h2{
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 100 /35;
+    aspect-ratio: 100 / 35;
     object-fit: cover;
     border-radius: 15px;
 }
