@@ -57,6 +57,12 @@ header {
 
 .nav-principal figure {
 	margin-right: 0rem;
+	display: flex;
+	align-items: center;
+}
+
+.nav-principal figure img {
+	display: block;
 }
 
 /*.logo img {

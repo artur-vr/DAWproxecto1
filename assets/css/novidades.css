@@ -72,6 +72,10 @@ h3 {
     flex-direction: column;
 }
 
+.imaxe-data figure {
+    margin: 0.5rem;
+}
+
 .imaxe-data img {
     aspect-ratio: 16/9;
     object-fit: cover;
@@ -82,4 +86,25 @@ h3 {
 
 .imaxe-data time {
     margin-left: 2rem;
+}
+
+@media (max-width: 900px) {
+    .novidades article {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .imaxe-data figure {
+        margin: 0;
+    }
+
+
+    .imaxe-data img {
+        width: 100%;
+    }
+
+    .imaxe-data time {
+        margin-left: 0;
+        margin-top: .5rem;
+    }
 }
