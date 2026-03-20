@@ -17,3 +17,24 @@
         btn.textContent = header.classList.contains('menu-aberto') ? '✕' : '☰';
     });
 }());
+
+
+
+//FUNCION JQUERY
+$(document).ready(function () {
+    let $bar = $('<div></div>').css({
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        height: '5px',
+        width: 0,
+        background: '#8BE8CB',
+    });
+
+    $('body').append($bar);
+
+    $(window).on('scroll resize', function () {
+        let max = $(document).height() - $(window).height() || 1;
+        $bar.css('width', $(window).scrollTop()*100/ max + '%');
+    });
+});
