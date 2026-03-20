@@ -1,0 +1,27 @@
+video {
+    display: block;
+    margin: 0 auto;
+    width: 40vw;
+    height: auto;
+    transition: width 0.8s ease,
+                transform 0.5s ease, 
+                box-shadow 0.5s ease,
+                opacity 0.3s ease;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.video-expandido {
+    width: 70vw;
+    height: auto;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    z-index: 10;
+}
+
+main ul li{
+    margin-bottom: 5rem;
+}
+
+.video{
+    background: linear-gradient(90deg, rgba(255,0,0,0) 0%, rgba(139,232,203, 0.5) 50%, rgba(0,0,0,0) 100%);
+}
