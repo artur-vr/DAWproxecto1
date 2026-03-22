@@ -1,51 +1,50 @@
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', () => {
     
-    const allVideos = $('video');
+    const allVideos = document.querySelectorAll('video');
+    const playlists = document.querySelectorAll('details');
 
-    allVideos.on('mouseenter', function() {
-        // Reproducir vídeo e mutearo
-        this.muted = true;
-        this.play();
+    allVideos.forEach(video => {
         
-        // Engadímoslle unha clase
-        $(this).addClass('video-expandido');
-        
-        // Atenuar o resto de vídeos
-        allVideos.not(this).css('opacity', '0.7');
+        // Reproduce el vídeo muteado
+        video.addEventListener('mouseenter', () => {
+            video.muted = true;
+            video.play();
+            video.classList.add('video-expandido');
+            
+            // Trasparencia al resto
+            allVideos.forEach(v => {
+                if (v !== video) v.style.opacity = '0.7';
+            });
+        });
+
+        // Pausa el vídeo, restablece la opacidad
+        video.addEventListener('mouseleave', () => {
+            video.pause();
+            video.classList.remove('video-expandido');
+            allVideos.forEach(v => v.style.opacity = '1');
+        });
+
+        // Al reproducir cambia el color del título
+        video.addEventListener('play', () => {
+            const title = video.parentElement.parentElement.querySelector('h2, h3');
+            if (title) title.style.color = '#8BE8CB';
+        });
+
+        // Al pausar vuelve al original
+        video.addEventListener('pause', () => {
+            const title = video.parentElement.parentElement.querySelector('h2, h3');
+            if (title) title.style.color = '';
+        });
     });
 
-    allVideos.on('mouseleave', function() {
-        // Pausar e resetear efectos
-        this.pause();
-        
-        // Quitamos a clase
-        $(this).removeClass('video-expandido');
-        
-        allVideos.css('opacity', '1');
+    // Al abrir una plyalist cerramos el resto
+    playlists.forEach(pl => {
+        pl.addEventListener('click', () => {
+            if (!pl.open) {
+                playlists.forEach(other => {
+                    if (other !== pl) other.open = false;
+                });
+            }
+        });
     });
-
-
-    const playlists = $('details');
-
-    playlists.on('click', function(e) {
-        
-        const currentPlaylist = $(this);
-        
-        // Pechamos o resto de playlist
-        if (!currentPlaylist.prop('open')) {
-            playlists.not(currentPlaylist).prop('open', false);
-        }
-    });
-
-
-    // --- CAMBIO COR TÍTULOS ---
-    
-    allVideos.on('play', function() {
-        $(this).parent().prevAll('h3, h2').first().css('color', '#8BE8CB');
-    });
-
-    allVideos.on('pause', function() {
-        $(this).parent().prevAll('h3, h2').first().css('color', '');
-    });
-
 });
