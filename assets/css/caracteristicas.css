@@ -18,7 +18,8 @@ article {
     margin-bottom: 40px;
 }
 
-article::after {  /*"limpar" os floats*/
+/*para que o bloque non colapse a causa dos floats*/
+article::after {  
     content: "";
     display: block;
     clear: both;
@@ -53,6 +54,7 @@ article ul {
     }
 }
 
+
 /* Opcion 2. Pantalla mediana. Nome ao lado */
 @media screen and (min-width: 750px) {
     .col-titulo {
@@ -66,14 +68,10 @@ article ul {
 }
 
 
-
 /* Opcion 3. Pantalla mais grande. 3 columnas */
-
 @media screen and (min-width: 1000px) {
-
     .col-sublista {
         width: 50%;
         float: left;
     }
-
 }

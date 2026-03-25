@@ -1,5 +1,6 @@
 body {
 	background-color: #000;
+	margin: 0;
 	font-family: 'Istok Web', 'Noto Sans', 'Open Sans', sans-serif;
 	/*font-size: 1vw;*/
 	color: #fff;
@@ -148,6 +149,9 @@ footer {
     color: #ADADAD;
 }
 
+footer p {
+	max-width: 78ch;
+}
 
 /*******************
 * MENÚ HAMBURGUESA *
