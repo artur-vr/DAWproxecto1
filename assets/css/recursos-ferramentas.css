@@ -9,6 +9,53 @@ main ul {
 
 main li {
     break-inside: avoid;
+    position: relative;
+    margin-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    padding-bottom: 1.5rem;
+    min-height: 13rem;
+}
+
+main li h4 {
+    position: absolute;
+    left: 2rem;
+    right: 2rem;
+    bottom: 1.25rem;
+    margin: 0;
+}
+
+main section{
+    margin-bottom: 4rem;
+}
+
+main h2{
+    color:#8BE8CB;
+}
+
+main a{
+    color:#8BE8CB;
+}
+
+@media screen and (max-width: 640px) {
+    main li {
+        min-height: auto;
+    }
+}
+
+
+/* main {
+    margin: 0 3%;
+}
+
+main ul {
+    columns: 300px 3;
+    column-gap: 4%;
+}
+
+main li {
+    break-inside: avoid;
     margin-bottom: 3rem;
     background-color: rgba(255, 255, 255, 0.1); 
     border-radius: 25px;
@@ -25,4 +72,4 @@ main h2{
 
 main a{
     color:#8BE8CB;
-}
+} */

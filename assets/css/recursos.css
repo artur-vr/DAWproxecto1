@@ -12,6 +12,10 @@ main ul{
     color: #8BE8CB;
 }
 
+h2 {
+    padding: 3% 7% 1% 7%;
+}
+
 /*APRENDE CREANDO*/
 main ul.aprende {
     display: grid;
@@ -28,8 +32,8 @@ main ul.aprende {
     background-position: center;
 }
 
-h2 {
-    padding: 3% 7% 1% 7%;
+.aprende-creando h2 {
+    margin: 0;
 }
 
 .aprende li {
