@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<texturas>
+    <textura>
+        <nome>SpaceTextures</nome>
+        <descripcion>Texturas para galaxias, planetas, asteroides, ceos con estrelas e planetas... 
+            Dalle vida ao teu ceo ou xogo no espazo con este texture pack.</descripcion>
+    </textura>
+    <textura>
+        <nome>RealisticRobots</nome>
+        <descripcion>Dalle vida aos teus robots, autómatas e cíborgs con este paquete de texturas
+            preparado para calquera estilo: retrofuturismo, steampunk, biopunk...</descripcion>
+    </textura>
+    <textura>
+        <nome>SciFiAndFantasy Skins</nome>
+        <descripcion>Texturas de peles, ollos e detalles para criaturas fantásticas ou alieníxenas.
+            Personaliza aos teus modelos con este paquete de texturas ideal para xogos de aventuras</descripcion>
+    </textura>
+</texturas>

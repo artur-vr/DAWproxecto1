@@ -5,6 +5,7 @@ main {
 main ul {
     columns: 300px 3;
     column-gap: 4%;
+    margin-bottom: 2vw;
 }
 
 main li {
@@ -44,6 +45,20 @@ main a{
     }
 }
 
+.mais{
+    user-select: none;
+    cursor: pointer;
+    margin-top: 2vw;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8BE8CB;
+    color: black;
+    font-size: 200%;
+    padding: 15px 25px;
+    border-radius: 50px;
+}
 
 /* main {
     margin: 0 3%;

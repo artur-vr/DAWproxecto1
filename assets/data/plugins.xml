@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugins>
+    <plugin>
+        <nome>SmartEnemies</nome>
+        <descripcion>Fai que os enemigos do teu xogo tomen posicións intelixentes e actúen
+            coordinados para ter unha experiencia máis realista e retadora</descripcion>
+    </plugin>
+    <plugin>
+        <nome>CodingColab</nome>
+        <descripcion>Programa conxuntamente nun mesmo proxecto. Ata 5 usuarios simultáneamente,
+            ideal para proxectos pequenos.</descripcion>
+    </plugin>
+</plugins>

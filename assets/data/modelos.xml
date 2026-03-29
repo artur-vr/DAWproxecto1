@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelos>
+    <modelo>
+        <nome>CloudsAndWind</nome>
+        <descripcion>Modelos e efectos para nubes de diferentes tipos, tormentas, vento e efectos atmosféricos
+            para xogos de diferentes tipos.</descripcion>
+    </modelo>
+    <modelo>
+        <nome>SciFi Explorer Rig</nome>
+        <descripcion>Modelo de personaxe futurista totalmente articulado (rigged), inclúe animacións básicas
+            de movemento e varias opcións de personalización de armadura.</descripcion>
+    </modelo>
+    <modelo>
+        <nome>Underwater Creatures</nome>
+        <descripcion>Modelos de criaturas mariñas, dende peixes ou cangrexos ata monstruos fantásticos e
+            criaturas abisais.</descripcion>
+    </modelo>
+</modelos>
