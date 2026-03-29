@@ -1,0 +1,18 @@
+{"faq" : [
+    {
+        "pregunta": "Que linguaxe de programación usa Subreal Engine?",
+        "resposta": "De xeito predeterminado usa SubScript, unha linguaxe propia baseada en Python, pero conta con wrappers a C# e C++."
+    },
+    {
+        "pregunta": "Podo usar os assets e sprites das bibliotecas para facer xogos de pago?",
+        "resposta": "Sí, todos os assets subidos ao repositorio de Subreal son de uso libre polos usuarios e poden usarse para proxectos con ánimo de lucro."
+    },
+    {
+        "pregunta": "Se fago un xogo sinxelo vai estar mal optimizado por usar un motor potente?",
+        "resposta": "Non, se o xogo é lixeiro, o compilador de Subreal Engine encárgase de usar os mínimos recursos posibles. Minimiza a complexidade do funcionamento interno, reduce o número de procesos e simplifica o renderizado. De todos modos isto pode configurarse minuciosamente desde a configuración de compilación avanzada."
+    },
+    {
+        "pregunta": "Podo subir sprites, plugins ou modelos de pago ao repositorio de Subreal?",
+        "resposta": "Non, o repositorio é aberto e gratis para todos os usuario do plan gratuíto e superiores. Se queres aportar para o reporsitorio exclusivo de suscripcións profesional e de empresas, debes pasar un proceso de revisión e serás recompensado en función do número de descargas que teña o teu recurso."
+    }
+]}
