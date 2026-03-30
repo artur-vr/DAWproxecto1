@@ -1,10 +1,6 @@
 (function () {
     const subtitulo = document.querySelector('.texto-titulo h2');
 
-    if (!subtitulo) {
-        return;
-    }
-
     const frases = [
         'Imaxina, crea e explota a túa creatividade',
         'Desenvolve máis rápido con Subreal Engine',

@@ -1,3 +1,4 @@
+//EFECTO 1. Hamburguesa
 (function () {
     // querySelector  – busca o header
     var header = document.querySelector('header');
