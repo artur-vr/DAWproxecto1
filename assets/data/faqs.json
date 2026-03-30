@@ -1,4 +1,8 @@
-{"faq" : [
+{"faqs" : [
+    {
+        "pregunta": "Isto é unha pregunta de proba cargada desde un Json con Api fech.",
+        "resposta": "isto é unha resposta de proba, como podes ver non aparece no html."
+    },
     {
         "pregunta": "Que linguaxe de programación usa Subreal Engine?",
         "resposta": "De xeito predeterminado usa SubScript, unha linguaxe propia baseada en Python, pero conta con wrappers a C# e C++."
